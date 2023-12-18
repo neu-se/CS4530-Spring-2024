@@ -3,46 +3,46 @@
 # Each key has a "name" attribute (rendered on the calendar), a "page" attribute (which contains a link to the lesson) and an optional "type" attribute, which is a key into the _data/config.yml "types" dictionary.
 1a:
   name: Orientation & Requirements
-  page: /modules/1-requirements-testing
+  page: 
 1b:
   name: Test Driven Development & Typescript
-  page: /modules/2-requirements-to-code
+  page: 
 2a:
-  name: 5 Best Practices for Effective Programmers
-  page: /modules/3-best-practices-for-effective-programmers
-2b:
-  name: Design Patterns
-  page: /modules/4-interaction-level-design-patterns
-3a:
-  name: Concurrency Patterns
-  page: /modules/5-concurrency-patterns-in-typescript
-3b:
-  name: Software Process
-  page: /modules/6-software-process
-4a:
-  name: React Part 1 (Introduction)
-  page: /modules/7-react
-4b:
-  name: React Part 2 (Common Patterns)
-  page: /modules/8-patterns-of-react
-5a:
-  name: Distributed System Architectures (Part 1)
-  page: /modules/9-distributed-systems-1
-5b:
-  name: Distributed System Architectures (Part 2)
-  page: /modules/10-distributed-systems-2
-6a:
   name: What Makes a Good Test Suite?
-  page: /modules/11-good-tests
+  page: 
+2b:
+  name: 5 Best Practices for Effective Programmers
+  page: 
+3a:
+  name: Design Patterns
+  page: 
+3b:
+  name: Concurrency Patterns
+  page: 
+4a:
+  name: Software Process
+  page: 
+4b:
+  name: React Part 1 (Introduction)
+  page: 
+5a:
+  name: React Part 2 (Common Patterns)
+  page: 
+5b:
+  name: Distributed System Architectures (Part 1)
+  page: 
+6a:
+  name: Distributed System Architectures (Part 2)
+  page: 
 6b:
   name: Tests with Larger Scope
-  page: /modules/12-larger-tests
+  page: 
 7a:
   name: Principles for Cloud Deployment
-  page: /modules/13-cloud-infrastructure
+  page: 
 7b:
   name: Continuous Development
-  page: /modules/14-continuous-development
+  page: 
 8a:
   name: Work on project (Discuss project plan revisions)
 8b:
@@ -51,12 +51,12 @@
   name: Midterm
 9b:
   name: Security
-  page: /modules/15-security
+  page: 
 10a:
   name: Work on project
 10b:
   name: Technical Debt
-  page: /modules/16-technical-debt
+  page: 
 11a:
   name: Work on Project
 11b:
@@ -66,7 +66,7 @@
   name: Work on Project
 12b:
   name: Ethics
-  page: /modules/17-ethics
+  page: 
 12c:
   name: Work on Project / Mini-Demo
 13a:
@@ -84,26 +84,26 @@ advanced:
 ip1:
   name: Individual Project Deliverable 1
   type: deadline
-  page: /assignments/ip1
+  page: 
 ip2:
   name: Individual Project Deliverable 2 
   type: deadline
-  page: /assignments/ip2
+  page: 
 tp1:
   name: Project Formation
   type: deadline
 tp2:
   name: Preliminary Project Plan
   type: deadline
-  page: /assignments/project-plan
+  page: 
 tp3:
   name: Revised Project Plan
   type: deadline
-  page: /assignments/revised-project-plan
+  page: 
 tp4:
   name: Project Final Deliverable
   type: deadline
-  page: /assignments/project-deliverable
+  page: 
 veteransday:
   name: Veteran's Day (No class)
   type: holiday
