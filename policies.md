@@ -78,6 +78,14 @@ BE PRESENT WHEN YOU ARE ATTENDING CLASS. Please do not distract yourself from th
 
 Attendance in the synchronous meetings is expected. Sometimes you cannot avoid missing a class. If you need to be away from class, it is your responsibility to catch up on the materials discussed in the class.
 
+## Academic Integrity
+Students must work individually on all homework assignments.
+We encourage you to have high-level discussions with other students in the class about the assignments, however, we require that when you turn in an assignment, it is only your work. That is, copying any part of another student's assignment is strictly prohibited.
+If you steal someone else's work, you fail the class. You are responsible for protecting your work. If someone uses your work, with or without your permission, you fail the class.
+You are free to reuse small snippets of example code found on the Internet (e.g., via StackOverflow) provided that it is attributed. Use of co-pilot is enrouraged.
+If you are concerned that by reusing and attributing that copied code it may appear that you didn't complete the assignment yourself, then please raise a discussion with the instructor. If you are in doubt whether using others' work is allowed, you should assume that it is NOT allowed unless the instructors confirm otherwise.
+
+
 ## Accommodations for Disabilities
 Students who have disabilities who wish to receive academic services and/or accommodations should visit the [Disability Resource Center](http://www.northeastern.edu/drc) at 20 Dodge Hall or call (617) 373-2675.
 Please be sure to provide your instructor with DRC's accommodations letter early in the semester in order to avoid logistical challenges.
