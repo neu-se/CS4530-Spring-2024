@@ -14,7 +14,7 @@ Covey.Town provides a virtual meeting space where different groups of people can
 Covey.Town is inspired by existing products like [Gather.Town](https://gather.town), [Sococo](https://www.sococo.com), and [Gatherly.IO](https://www.gatherly.io) --- but it is an open source effort, and the features will be proposed and implemented by you!
 All implementation will take place in the TypeScript programming language, using React for the user interface.
 
-Select projects from Fall 2024 are hosted [in our project showcase](https://neu-se.github.io/CS4530-Fall-2024/assignments/project-showcase).
+Select projects from Fall 2023 are hosted [in our project showcase](https://neu-se.github.io/CS4530-Fall-2023/assignments/project-showcase).
 
 
 ### Overview of Project Deliverables
@@ -56,11 +56,11 @@ All students in each team must be in the same section of the class.
 
 
 ### Team Meetings with TA Mentor
-Each team will be assigned a TA to act as a mentor, who will also serve as your point of contact for project grading and will work closely with you for the entire project.
+Each team will be assigned a TA to act as a mentor, who will work closely with you for the entire project and also will serve as your point of contact for project questions and grading. 
 
-During Week5, you will have a "Kickoff Meeting" with your TA mentor, where you will meet your TA mentor and have the opportunity to share any early ideas that you might want feedback on before submitting the your preliminary project plan.
+During Week 5, you will arrange a "Kickoff Meeting" with your TA mentor, where you will meet your TA mentor and have the opportunity to share any early ideas that you might want feedback on before submitting the your preliminary project plan.
 
-Once project begins in full force, you will have weekly meetings with your TA mentor (scheduled at your team's and the TA's convenience) in order to help ensure that you are making progress on the project, and to help address problems that you encounter (be they technical or non-technical problems).
+Once project begins in full force, you will have weekly meetings with your TA mentor (scheduled at your team's and the TA's convenience) in order to help ensure that you are making progress on the project, and to help address problems that you encounter (be they technical or non-technical problems). 
 
 ###  Preliminary Project Plan
 All projects will involve frontend and backend development of a new feature for Covey.Town.
@@ -88,7 +88,7 @@ The project plan will include:
 Your team will self-organize, as agile teams do, and will use the work breakdown and schedule as the basis for weekly check-ins with your team's TA.
 
 ### Software Development Process
-Each team is expected to use of a structured development process, including code reviews. You will also need to ensure appropriate division of labor within the project (i.e., roughly equal). Teams will also be expected to complete regular progress reports (or sprint retrospectives), and individual/team surveys. Peer evaluation may also be used (for Week 6, 8, 10-14). 
+Each team is expected to use of a structured development process, including use of pull requests and code reviews. You will also need to ensure appropriate division of labor within the project (i.e., roughly equal). Teams will also be expected to complete regular progress reports (or sprint retrospectives), and individual/team surveys. Peer evaluation may also be used (for Week 6, 8, 10-14). 
 Please note that one of the most important factors in successfully completing a team project is having effective communication. 
 
 ### Project Implementation and Documentation
@@ -100,7 +100,7 @@ Your final team deliverable will include:
 * The implementation of your new feature
 * Automated tests for your new feature
 * A Final Report
-* A Poster & Demo (each instructor will provide specifics of the demo, which might very for each section)
+* A Poster & Demo (each instructor will provide specifics of the demo, which might vary for each section)
     
 Accompanying the final team deliverable will be an *individual reflection*, which every student must submit on their own, which will include your reflections on:
 * The evolution of your project concept: How does the project that you delivered compare to what you originally planned to deliver? What caused these deviations?
