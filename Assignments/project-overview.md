@@ -14,8 +14,6 @@ Covey.Town provides a virtual meeting space where different groups of people can
 Covey.Town is inspired by existing products like [Gather.Town](https://gather.town), [Sococo](https://www.sococo.com), and [Gatherly.IO](https://www.gatherly.io) --- but it is an open source effort, and the features will be proposed and implemented by you!
 All implementation will take place in the TypeScript programming language, using React for the user interface.
 
-Select projects from Fall 2023 are hosted [in our project showcase](https://neu-se.github.io/CS4530-Fall-2023/assignments/project-showcase).
-
 
 ### Overview of Project Deliverables
 
