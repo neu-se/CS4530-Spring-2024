@@ -32,7 +32,7 @@ The objectives of this assignment are to:
 
 ## Getting started with this assignment
 
-Before you begin, be sure to check that you have NodeJS 18.x installed, along with VSCode. We have provided a [tutorial on setting up a development environment for this class]({{site.baseurl}}{% link tutorials/week1-getting-started.md %}) 
+Before you begin, be sure to check that you have NodeJS 18.x installed, along with VSCode. We have provided a [tutorial on setting up a development environment for this class]({{site.baseurl}}% link tutorials/week1-getting-started.md % **FIX LINK**) 
 Start by [downloading the starter code]({{site.baseurl}}{% link /Assignments/ip1/ip1-handout.zip %}). Extract the archive and run `npm install` to fetch the dependencies. Avery has provided you with some very basic sanity tests that you can extend for testing your implementation as you go. You can run these tests with the command `npm test ConnectFour` (note that many tests are *expected* to fail until you have begun to implement the assignment).
 
 ## Grading
@@ -82,36 +82,34 @@ classDiagram
         ~Game _game
         ~GameResult _history
     }
-    class TicTacToeGame {
+    class ConnectFourGame {
 
     }
-    class TicTacToeGameArea {
+    class ConnectFourGameArea {
     }
-    class InteractableArea {
-        +string id
-       ~Player[] _occupants
-       +string[] occupantsByID
-       +boolean isActive
-       +BoundingBox boundingBox
-       +add(player: Player)
-       +remove(player: Player)
-       +addPlayersWithinBounds(allPlayers: Player[])
-       +toModel()
-       +contains(location: PlayerLocation)
-       +overlaps(otherInteractable: Interactable)
-       + handleCommand(command: InteractableCommand, player:Player)
-       #_emitAreaChanged()
-    }
-
     class GameResult {
         +GameInstanceID gameID
         +Map scores
     }
     GameArea o-- GameResult
-    TicTacToeGame ..|> Game
-    TicTacToeGameArea ..|> GameArea
-    GameArea ..|> InteractableArea
+    ConnectFourGame ..|> Game
+    ConnectFourGameArea ..|> GameArea
+    ConnectFourGameArea o-- ConnectFourGame
     GameArea o-- Game
+</div>
+
+State diagram for game status:
+<div class="mermaid">
+%%{init: { 'theme':'forest', } }%%
+flowchart TD
+
+    A[WAITING_FOR_PLAYERS] --> |1 player joins| A
+    A --> |2nd player joins| B
+    B --> |A player leaves| A
+    B[WAITING_TO_START] --> |1 player clicks ready|B
+    B --> |Other player clicks ready| C
+    C[IN_PROGRESS] --> |Game Ends or a player leaves| D
+    D[OVER] --> |1 player clicks 'new game'| B
 </div>
 
 ## Implementation Tasks
@@ -119,7 +117,7 @@ This deliverable has four parts; each part will be graded on its own rubric. You
 
 **General Requirements**: Implement your code *only* in the files specified: `src/town/games/ConnectFourGame.ts`, `src/town/games/ConnectFourGame.test.ts` and `src/town/games/ConnectFourGame.ts`. You should not install any additional dependencies. The autograder will ignore any other files that you modify, and will not install any dependencies that you add to the project.
 
-### Task 1: Joining and Leaving the ConnectFourGame (24 points)
+### Task 1: Joining and Leaving the ConnectFourGame (10 points)
 The `ConnectFourGame` class extends the base `Game` class, implementing the semantics of the game Connect Four. Avery has provided a definition for the types that will be used to represent the state of a `ConnectFourGame` - `ConnectFourGameState`. That type definition is reproduced below:
 
 {% highlight typescript %}
@@ -221,18 +219,16 @@ Your first task is to implement the `_join`, `startGame` and `_leave` methods of
 *Testing*: Avery has provided you with some very simple (and incomplete) tests for `_join`. You can run these tests by running the command `npx jest --watch TicTacToeGame.test`, which will automatically re-run the tests as you update the file (note that tests for `applyMove` will also run - but you can ignore those at this point). As you read and understand the specification, you should extend the existing test suite, adding tests to cover the entire specification. Please implement these additional tests in the file `src/town/games/TicTacToeGame.test.ts`.
 
 Grading for implementation tasks:
-* `_join`: X points
-* `startGame`: X points
-* `_leave`: X points
+* `_join`: 2 points
+* `startGame`: 1 points
+* `_leave`: 1 points
 
 Grading for testing tasks:
-* `_join`:
-  * X points for detecting all 25 faults, or
-  * X points for detecting 24 faults
-* `startGame`: X points
-* `_leave`: X points 
+* `_join`: 2 points
+* `startGame`: 2 points
+* `_leave`: 2 points 
 
-### Task 2: Connect Four Game Semantics (50 points total)
+### Task 2: Connect Four Game Semantics (70 points total)
 The next (and largest) task for this deliverable is to implement the method `ConnectFourGame.applyMove`, which applies a player's move to the game. This method is responsible for validating the move, and updating the game state to reflect the move. Given the complexity of this method, you should anticipate creating (at least one) private, helper method to implement its logic.
 
 <details><summary markdown="span">View the specification for this method</summary>
@@ -259,20 +255,19 @@ The next (and largest) task for this deliverable is to implement the method `Con
 </details>
 
 Grading for implementation tasks:
-* Correctly validating who is the first player: X points
-* Applying moves: X points
-* Checking for game-ending moves: X points
-* Checking for invalid moves: X points
+* Correctly validating who is the first player: 5 points
+* Applying moves: 7 points
+* Checking for invalid moves: 12 points
+* Checking for game-ending moves: 10 points
 
 Grading for testing tasks:
-* Applying moves: 6 points
-* Checking for invalid moves:
-  * 7 points for detecting all 35 faults
-  * 4 points for detecting 34 faults
-* Handling game-ending moves: 9 points
+* Correctly validating who is the first player: 5 points
+* Permitting valid moves: 8 points
+* Checking for invalid moves: 13 points
+* Handling game-ending moves: 10 points
 
-### Task 3: Implement the ConnectFourGameArea (16 points total)
-The `ConnectFourGameArea` receives `InteractbleCommand`s from players who enter the area on their client. The main responsibility of this class is to interpet those commands, dispatching them as appropriate to the `ConnectFourGame` instance that it manages. Your final task is to implement the `handleCommand` method of `TicTacToeGameArea`.
+### Task 3: Implement the ConnectFourGameArea (10 points total)
+The `ConnectFourGameArea` receives `InteractableCommand`s from players who enter the area on their client. The main responsibility of this class is to interpet those commands, dispatching them as appropriate to the `ConnectFourGame` instance that it manages. Your final task is to implement the `handleCommand` method of `TicTacToeGameArea`.
 
 There are four types of commands that the `ConnectFourGameArea` will receive, which map directly to the three methods of `ConnectFourGame` that you implemented in the previous task. 
 
@@ -311,18 +306,18 @@ Avery has provided a complete test suite for `handleCommand` - you do not need t
 </details>
 
 Grading for implementation tasks:
-* Handling JoinGame: 3 points
-* Handling GameMove: 3 points
-* Handling LeaveGame: 3 points
-* Handling StartGame: 3 points
-* Handling invalid commands: 1 point
+* Handling JoinGame: 2 points
+* Handling GameMove: 2 points
+* Handling LeaveGame: 2 points
+* Handling StartGame: 2 points
+* Handling invalid commands: 2 point
 
 ## Submission Instructions
 Submit your assignment to the instance of Autograder.io running at [neu.autograder.io](https://neu.autograder.io).
 Navigate to [neu.autograder.io](https://neu.autograder.io) in your web browser, click the "Sign in" button, and log in with your Northeastern account.
 You should then see the course listed on the neu.autograder.io home page.
 Please contact the instructors immediately if you have difficulty accessing the course on Autograder.io.
-If you haven't been added to the course roster yet, you can access the assignment page at [this direct link](https://neu.autograder.io/web/project/10).
+If you haven't been added to the course roster yet, you can access the assignment page at [this direct link](https://neu.autograder.io/web/project/12).
 
 To submit your assignment: run the command `npm run zip` in the top-level directory of the handout. This will produce a file called `covey-town-townService.zip`. Submit that zip file on Autograder.io.
 
