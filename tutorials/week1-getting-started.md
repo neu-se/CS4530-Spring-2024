@@ -50,7 +50,7 @@ Before starting the installation, make sure to kill your Visual Studio Code if y
    - ![image](./assets/week1-getting-started/node/nvmw-verification.png)
 7. Run the command `nvm list available` to display all available NodeJS versions.
    - ![image](./assets/week1-getting-started/node/nvmw-list-available.png)
-8. Install the latest LTS (Long term supported, as opposed to the "development") version of Node.js version 18 available using the command `nvm install 18`.
+8. Install Node.js version 18 using the command `nvm install 18`.
 9. To use this version of NodeJS, run the command `nvm use 18`.
    - ![image](./assets/week1-getting-started/node/nvmw-use-18.png)
 
