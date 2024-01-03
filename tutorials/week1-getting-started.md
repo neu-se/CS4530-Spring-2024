@@ -20,7 +20,7 @@ If you run into any difficulties following any of these steps, please post (in a
 
 Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
-For this class, you will need Node.js version 18 (18.13.0 was the latest version at time of writing, although any 18.x or 16.x should work in theory). 
+For this class, you will need Node.js version 18 (18.19.0 was the latest version at time of writing, although any 18.x or 16.x should work in theory). 
 There are many ways that you can install Node.js: for instance, you can use a package manager like
 `snap` or `homebrew` to install it; you can download an installer directly from the Node.js website, and you can,
 of course, build it from source. However, due to the complexity of running different Node.js versions on the same machine, we *very strongly* suggest using `nvm`, as explained below.
@@ -34,8 +34,9 @@ have previously installed Node.js.
 
 ## Installing NodeJS with NVM for Windows
 
+Before starting the installation, make sure to kill your Visual Studio Code if you have it installed. To do that on Windows, open a command prompt(type `cmd` in the windows start bar, then select "Run as administrator") and run the command `taskkill.exe /IM code.exe`.
 
-1. Download `nvm-setup.zip` from the most recent release of [nvm-windows](https://github.com/coreybutler/nvm-windows/releases) (at time of writing this document, version was 1.1.10).
+1. Download `nvm-setup.zip` from the most recent release of [nvm-windows](https://github.com/coreybutler/nvm-windows/releases) (at time of writing this document, version was 1.1.12).
 
    - ![image](./assets/week1-getting-started/node/download-nvmw.png)
 2. Extract the contents of `nvm-setup.zip` and run the executable `nvm-setup.exe`.
@@ -47,24 +48,15 @@ have previously installed Node.js.
 6. Verify the installation, run the command `nvm version`
    - This should display the version of nvm installed.
    - ![image](./assets/week1-getting-started/node/nvmw-verification.png)
-7.  Run the command `nvm list available` to display all available NodeJS versions.
+7. Run the command `nvm list available` to display all available NodeJS versions.
    - ![image](./assets/week1-getting-started/node/nvmw-list-available.png)
+8. Install the latest LTS (Long term supported, as opposed to the "development") version of Node.js version 18 available using the command `nvm install 18`.
+9. To use this version of NodeJS, run the command `nvm use 18`.
+   - ![image](./assets/week1-getting-started/node/nvmw-use-18.png)
 
-8.  Install the latest LTS (Long term supported, as opposed to the "development") version of Node.js available using the command `nvm install lts`.
-9.  To use this version of NodeJS, run the command `nvm use lts`.
-10. Now, NodeJS should be installed and ready for use. To verify the installation run the below commands:
-   - `node -v`
-   - `npm -v`
-
-You should see something like the following As of 1/09/23 on Windows, the most current versions were: `node: 18.13.0` and `npm: 8.19.3`
-  
-- ![image](./assets/week1-getting-started/node/nvmw-use-18.png)
-
+<!-- Removed step 10 because it overlaps with Verification -->
 
 *Troubleshooting with VSCode*: Did you follow these instructions successfully, but find a "Command not found" error when you try to run `npm` in VSCode? Try this: Close VSCode completely. Re-open it. In your command shell in VSCode, try again. We have noticed that if you have VSCode open while installing `nvm`, it is possible that VSCode will not see the new software installation until it's closed and re-opened. You can also confirm that VSCode correctly sees the NodeJS installation by running `echo %PATH%` in your windows command shell in VSCode: it should include an entry similar to `C:\Program Files\nodejs`.
-
-*Working with MacOS M1 Silicon*: If you have macOS on M1 Silicon 2022, you can find instructions [here](https://benscheer.medium.com/how-to-install-nvm-and-node-on-macos-m1-silicon-in-2022-172fba82d92f).
-
 
 ## Installation Steps (Linux / Mac)
 
@@ -75,15 +67,17 @@ out `nvm`, it should be working. If you see `nvm: command not found` or no
 feedback, open a new terminal and trying again or restart from step 1.
 4. Install the latest LTS (Long term supported, as opposed to the "development") version of Node.js by typing `nvm install 18`.
 
+*Working with MacOS M1 Silicon*: If you have macOS on M1 Silicon 2022, you can find instructions [here](https://benscheer.medium.com/how-to-install-nvm-and-node-on-macos-m1-silicon-in-2022-172fba82d92f).
+
 ## Verification
 
-1. Open a shell or windows powershell.
+1. Open a shell (for Linux / Mac) or windows powershell/command prompt (for Windows).
 2. Run the command `node -v`
-  - This should print the current version of nodeJS installed (v18.x.x)
+  - This should print the current version of nodeJS installed (v18.x.x).
 3. Run the command `npm -v`
-  - This should print the current version of npm installed (v8.x.x)
-![image](./assets/week1-getting-started/node/verification.JPG)
-4. If you find that some other version is being used, and would like to change the default to 18, run the command `nvm alias default 18`
+  - This should print the current version of npm installed (v10.x.x).
+![image](./assets/week1-getting-started/node/verification.png)
+4. If you find that some other version is being used, run the command `nvm use 18`. For Linux / Mac, you can change the default to 18 by running the command `nvm alias default 18`.
 
 # Installing Visual Studio Code (VSCode)
 
@@ -92,6 +86,7 @@ While you are required to use *an* IDE for this class, it is not mandatory to us
 in another suitable IDE (like IntelliJ), then you are welcome to continue to use that. However, VSCode is the
 "supported" option: if you struggle to get things like the linter set up correctly in VSCode, we will be happy to help you. 
 However, we can't provide such support for all IDEs. 
+
 ## Pre-requisites
 
 - Administrative access on the host machine for software installation.
@@ -132,7 +127,8 @@ Below is a list of extensions that you may find useful.
 3. vscode-icons
 4. ESLint
 5. Andromeda (Color theme: Andromeda Colorizer)
-6. Jest Runner 
+6. Jest Runner (highly recommended)
+7. GitHub Copilot and GitHub Copilot Chat
 
 ![image](./assets/week1-getting-started/vsc/useful-extensions.JPG)
 
@@ -144,6 +140,12 @@ Below is a list of extensions that you may find useful.
 4. Done!
     - ![image](./assets/week1-getting-started/vsc/eslint-search.JPG)
 
+## Additional Settings (Optional)
+
+You may find it useful to add some settings:
+
+1. Turn on "bracket pair colorization" (in File > Preferences > Settings)
+2. Add a keybinding for formatting the current selection (in File > Preferences > Keyboard Shortcuts > Format Selection )
 
 # Getting Started With Typescript
 
@@ -154,27 +156,26 @@ Typescript is a superscript of JavaScript which adds type information and other 
 - NodeJS
 - VSCode (recommended but not required)
 
-## Installation
-
-1. Open VSCode and press the ctrl + `~` (Tilde or back tick key) to open a terminal.
-  - Optionally you can open a separate shell (Do not use powershell)
-2. Run the command `npm install -g typescript` in the terminal.
-  - Typescript should now be installed globally and accessible from the terminal.
-3. Verify the installation using the command `tsc -v` in the terminal. (Do NOT use powershell)
-  - ![image](./assets/week1-getting-started/ts/installing-tsc.JPG)
+<!-- Remove the old instruction for installing Typescript globally and use Professor Wand's version of Hello World with local installation -->
 
 ## Hello World
 
 1. Create a new directory and open it with VSCode.
-2. Create a new file called `hello-world.ts`
+2. Create a new file called `hello-world.ts`. 
+   - You can do this from within VSC by typing ctrl + `N`, but this is not necessary.
 3. Add the following code to the file:
   ```
     console.log('Hello, World!');
   ```
-4. Open the terminal with ctrl + `~`.
+4. Open the terminal with ctrl + `~` or ctrl + '`' (ctrl-backtick)
   - Ensure that you are in the same directory as `hello-world.ts`.
-5. Run the command `tsc hello-world.ts`
-  - This will generate a JS file called `hello-world.js`
-6. Run the file with node using the command `node hello-world.js`.
+5. Install typescript by running the command `npm install --save typescript` . 
+  - This will install Typescript locally in the current directory.
+6. Run the command `npx ts-node hello-world.ts`.
+  - If you are prompted, enter `y`.
   - This will give the result below.
-  - ![image](./assets/week1-getting-started/ts/result.JPG)
+  - ![image](./assets/week1-getting-started/ts/result.png)
+
+<!-- Add troubleshooting here because I ran into this problem here -->
+
+*Troubleshooting with VSCode*: Did you follow these instructions successfully, but find a "Command not found" error when you try to run `npm` in VSCode? Try this: Close VSCode completely. Re-open it. In your command shell in VSCode, try again. We have noticed that if you have VSCode open while installing `nvm`, it is possible that VSCode will not see the new software installation until it's closed and re-opened. You can also confirm that VSCode correctly sees the NodeJS installation by running `echo %PATH%` in your windows command shell in VSCode: it should include an entry similar to `C:\Program Files\nodejs`.
