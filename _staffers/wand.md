@@ -6,6 +6,6 @@ website: http://www.ccs.neu.edu/home/wand/
 photo: staff/wand175-cropped-2.jpg
 section: CS4530 Section 4
 office-hours: |
-    * TBA
+    * on Zoom, directly following class
 ---
 
