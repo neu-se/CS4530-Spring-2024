@@ -56,6 +56,7 @@ Contents:
     *   [Abstraction](#abstraction)
     *   [Encapsulation](#encapsulation)
 *   [General Guidelines](#general-guidelines)
+*   [tsconfig](#tsconfig)
 
 Typescript is a superset of JavaScript. Thus, all JavaScript code is valid Typescript code. Typescript introduces concepts of optional typing, modules, and few additional features to Javascript. Let us begin by extending JavaScript to use the features of Typescript and primitive types.
 
@@ -473,7 +474,7 @@ As the name suggests it can filter out the data/array elements on the basis of c
  
 Syntax
 ```ts  
-array.map(callback[,object])
+array.filter(callback[, object])
 ``` 
 callback - it is a function that provides an element of the new Array from an element of the current one.
 object - object to use as this when executing callback.
@@ -1056,3 +1057,42 @@ get Balance(): number {
 *   Use a linter. (as specified on course website)
 *   Use a prettifier. (If the linter doesn't do it already)
 *   Use general coding guidelines as discussed in Week1.
+
+## tsconfig 
+What is the tsconfig.json file?
+* The presence of a tsconfig.json file in a directory indicates that the directory is the root of a TypeScript project. The tsconfig.json file specifies the root files and the compiler options required to compile the project.
+* JavaScript projects can use a jsconfig.json file instead, which acts almost the same but has some JavaScript-related compiler flags enabled by default.
+A project is compiled in one of the following ways:
+
+Using tsconfig.json or jsconfig.json:
+* By invoking tsc with no input files, in which case the compiler searches for the tsconfig.json file starting in the current directory and continuing up the parent directory chain.
+* By invoking tsc with no input files and a --project (or just -p) command line option that specifies the path of a directory containing a tsconfig.json file, or a path to a valid .json file containing the configurations.
+When input files are specified on the command line, tsconfig.json files are ignored.
+
+Example tsconfig.json files:
+Using the files property
+
+```{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true
+  },
+  "files": [
+    "core.ts",
+    "sys.ts",
+    "types.ts",
+    "scanner.ts",
+    "parser.ts",
+    "utilities.ts",
+    "binder.ts",
+    "checker.ts",
+    "emitter.ts",
+    "program.ts",
+    "commandLineParser.ts",
+    "tsc.ts",
+    "diagnosticInformationMap.generated.ts"
+  ]
+}
