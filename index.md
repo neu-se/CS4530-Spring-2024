@@ -38,7 +38,7 @@ The course will be delivered in a "traditional" lecture style. Prof Wand's secti
 | Section       | Instructor                                                                | Meeting Time                                 | Meeting Place      |
 |---------------|---------------------------------------------------------------------------|----------------------------------------------|--------------------|
 | 1             | Prof Bell                                                                 | MR 11:45 am - 1:25 pm                        | West Village H 110 |
-| 2             | Prof Bhutta                                                               | MW 2:30 pm - 4:30 pm                         | Dodge Hall 173     |
+| 2             | Prof Bhutta                                                               | MW 2:50 pm - 4:30 pm                         | Dodge Hall 173     |
 | 3             | Prof Bhutta                                                               | T 11:45 am - 1:25 pm & R 2:50 pm - 4:30pm    | Snell Library 031  |
 | 4             | Prof Wand                                                                 | W 6:00 pm - 9:20 pm                          | Online             |
 | 5             | Prof Bhutta                                                               | TF 3:25 pm - 5:05 pm                         | Robinson Hall 109  |
@@ -70,7 +70,7 @@ The project will provide hands-on experience to complement the skills taught in 
   - Twilio's Programmable Video API
   - Postman
 
-Select projects from Spring 2022 are hosted [in our project showcase](https://neu-se.github.io/CS4530-Spring-2022/assignments/project-showcase).
+Select projects from Fall 2023 are hosted [in our project showcase](https://neu-se.github.io/CS4530-Fall-2023/assignments/project-showcase).
 
 ### Acknowledgements
 This class and its contents were inspired by Software Engineering courses at various institutions, including:
