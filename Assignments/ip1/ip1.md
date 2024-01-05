@@ -115,7 +115,7 @@ flowchart TD
 ## Implementation Tasks
 This deliverable has four parts; each part will be graded on its own rubric. You should complete the assignment one part at a time, in the order presented here.
 
-**General Requirements**: Implement your code *only* in the files specified: `src/town/games/ConnectFourGame.ts`, `src/town/games/ConnectFourGame.test.ts` and `src/town/games/ConnectFourGame.ts`. You should not install any additional dependencies. The autograder will ignore any other files that you modify, and will not install any dependencies that you add to the project.
+**General Requirements**: Implement your code *only* in the files specified: `src/town/games/ConnectFourGame.ts`, `src/town/games/ConnectFourGame.test.ts` and `src/town/games/ConnectFourGameArea.ts`. You should not install any additional dependencies. The autograder will ignore any other files that you modify, and will not install any dependencies that you add to the project.
 
 ### Task 1: Joining and Leaving the ConnectFourGame (10 points)
 The `ConnectFourGame` class extends the base `Game` class, implementing the semantics of the game Connect Four. Avery has provided a definition for the types that will be used to represent the state of a `ConnectFourGame` - `ConnectFourGameState`. That type definition is reproduced below:
@@ -267,7 +267,7 @@ Grading for testing tasks:
 * Handling game-ending moves: 10 points
 
 ### Task 3: Implement the ConnectFourGameArea (10 points total)
-The `ConnectFourGameArea` receives `InteractableCommand`s from players who enter the area on their client. The main responsibility of this class is to interpet those commands, dispatching them as appropriate to the `ConnectFourGame` instance that it manages. Your final task is to implement the `handleCommand` method of `TicTacToeGameArea`.
+The `ConnectFourGameArea` receives `InteractableCommand`s from players who enter the area on their client. The main responsibility of this class is to interpet those commands, dispatching them as appropriate to the `ConnectFourGame` instance that it manages. Your final task is to implement the `handleCommand` method of `ConnectFourGameArea`.
 
 There are four types of commands that the `ConnectFourGameArea` will receive, which map directly to the three methods of `ConnectFourGame` that you implemented in the previous task. 
 
