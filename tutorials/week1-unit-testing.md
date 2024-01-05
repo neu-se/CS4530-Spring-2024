@@ -676,23 +676,23 @@ With [vscode-jest](https://marketplace.visualstudio.com/items?itemName=Orta.vsco
 - Show coverage information in files being tested.
 - Help debug jest tests in vscode.
 - Supports multiple test run modes (automated, manual, and hybrid onSave) to meet user's preferred development experience.
-- Track and shows overall workspace/project test stats
+- Track and shows overall workspace/project test stats.
 
 ## Installation
 
 ### Direct Installation
 
 1. Open Visual Studio Code, go to the extension tab.
-1. Search for "Jest" with the publisher name as "Orta".
-1. Click "Install".
+2. Search for "Jest" with the publisher name as "Orta".
+3. Click "Install".
 
 ### From Visual Studio Marketplace
 
 1. Visit [Jest - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest) and click "Install".
-1. Allow the browser to open VSCode as shown (might be different for macOS/Linux systems) by clicking on Continue.
+2. Allow the browser to open VSCode as shown (might be different for macOS/Linux systems) by clicking on Continue.
 
    ![Allow browser to open VSCode](./assets/week1-unit-testing/vscode-jest/allow-browser-vscode.jpg)
-1. Once VSCode is open, click on "Install".
+3. Once VSCode is open, click on "Install".
 
 Once installed, the extension should work out of the box without any extra configuration for most of the homework handouts and project starter code.
 
@@ -707,7 +707,7 @@ If restarting Jest does not work, you can run the following in your VSCode by op
 
 ### Additional Extensions and Libraries
 
-If you would like to run each test individually (and all tests in test suites colledtively), VSC extenstion called "Jest Runner" will be very useful. You can also explore [jest extended library](https://www.npmjs.com/package/jest-extended) that offers additional matchers for testing. 
+If you would like to run each test individually (and all tests in test suites collectively), VSC extenstion called "Jest Runner" will be very useful. You can also explore [jest extended library](https://www.npmjs.com/package/jest-extended) that offers additional matchers for testing. 
 
 ## Configuration
 
@@ -750,11 +750,11 @@ If everything is setup correctly, the debugger in VSCode will pause at the break
      - Nondeterminism (e.g., hash codes, random numbers);
      - Timing issues (e.g., threads, network).
      - Availability of Resources
-1. Tests should be clear.
+2. Tests should be clear.
    - After failure, should be clear what went wrong.
-1. Tests should be scoped as small as possible.
+3. Tests should be scoped as small as possible.
    - Faster and more reliable.
-1. Tests should make calls against public APIs.
+4. Tests should make calls against public APIs.
    - Or they become brittle
    - Brittle tests are those that are not self-contained:
      - Ordering of tests (e.g., assume prior state)
