@@ -1062,6 +1062,7 @@ get Balance(): number {
 What is the tsconfig.json file?
 * The presence of a tsconfig.json file in a directory indicates that the directory is the root of a TypeScript project. The tsconfig.json file specifies the root files and the compiler options required to compile the project.
 * JavaScript projects can use a jsconfig.json file instead, which acts almost the same but has some JavaScript-related compiler flags enabled by default.
+* Note: In many packages, a configuration file is included, featuring predefined settings that typically require no alterations. Also, you may not need this for simple projects like hello world.
 A project is compiled in one of the following ways:
 
 Using tsconfig.json or jsconfig.json:
