@@ -1,7 +1,7 @@
 ---
-name: TaeYoon Jin
+name: Kevin (TaeYoon) Jin
 role: Teaching Assistant
 email: jin.ta@northeastern.edu
-photo: 
+photo: staff/kevin_jin.jpg
 
 ---
