@@ -216,7 +216,7 @@ Your first task is to implement the `_join`, `startGame` and `_leave` methods of
 {% endhighlight %}
 </details>
 
-*Testing*: Avery has provided you with some very simple (and incomplete) tests for `_join`. You can run these tests by running the command `npx jest --watch TicTacToeGame.test`, which will automatically re-run the tests as you update the file (note that tests for `applyMove` will also run - but you can ignore those at this point). As you read and understand the specification, you should extend the existing test suite, adding tests to cover the entire specification. Please implement these additional tests in the file `src/town/games/TicTacToeGame.test.ts`.
+*Testing*: Avery has provided you with some very simple (and incomplete) tests for `_join`. You can run these tests by running the command `npx jest --watch ConnectFourGame.test`, which will automatically re-run the tests as you update the file (note that tests for `applyMove` will also run - but you can ignore those at this point). As you read and understand the specification, you should extend the existing test suite, adding tests to cover the entire specification. Please implement these additional tests in the file `src/town/games/ConnectFourGame.test.ts`.
 
 Grading for implementation tasks:
 * `_join`: 2 points
