@@ -5,7 +5,7 @@ permalink: /tutorials/week1-user-stories
 parent: Tutorials
 nav_order: 3
 ---
-This tutorial provides examples for user stories, consitions of satisafation and how a minimum viable product can be defined.
+This tutorial provides examples for user stories, conditions of satisfaction and how a minimum viable product can be defined.
 
 Contents:
 * [User Stories and Conditions of Satisfaction](#user-stories-and-conditions-of-satisfaction)
@@ -71,7 +71,7 @@ As a user of Covey.Town, I want to be able to interact with other users in diffe
 
 ## Conditions of Satisfaction:
 ### For User Story #2:
-* There should be a Conncect4 area in the town, where players can play Connect4. (Essential)
+* There should be a Connect4 area in the town, where players can play Connect4. (Essential)
 * Whenever there are two players in the same Connect4 area, a Connect4 game is started between them. (Essential)
 * The status of the Connect4 game is presented in graphical form on the screen (Essential).
 * When one player wins (or there is a draw), both players are notified of the result. (Essential)
