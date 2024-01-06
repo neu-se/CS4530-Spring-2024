@@ -60,12 +60,24 @@ Before starting the installation, make sure to kill your Visual Studio Code if y
 
 ## Installation Steps (Linux / Mac)
 
-1. Run either `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash` or If `wget` is installed then run `wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`.
-2. Close and reopen a terminal.
+1. Run either `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash` or If `wget` is installed then run `wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash`.
+2. Close and reopen the active terminal.
+> Note: You can also restart your terminal by running `source ~/.bashrc` or `source ~/.zshrc` depending on your shell.
 3. Verify nvm is working by entering `command -v nvm`. If your terminal prints
 out `nvm`, it should be working. If you see `nvm: command not found` or no
 feedback, open a new terminal and trying again or restart from step 1.
-4. Install the latest LTS (Long term supported, as opposed to the "development") version of Node.js by typing `nvm install 18`.
+4. Install the required version of Node.js by typing `nvm install 18`.
+> Note: While the LTS of node is 20, we are using 18 for this class (and has been tested on node version 18).
+
+### Installing NVM when using the fish terminal (Linux / Mac)
+> Note: When using the Fish terminal, [`nvm.fish`](https://github.com/jorgebucaran/nvm.fish) should be used to install nvm. 
+> This is not a fish wrapper for nvm rather it is written from scratch using fish. 
+> Current version of NVM is not supported on terminals that are running fish or have installed fish in the past.
+
+1. Install nvm.fish using Fisher: `fisher install jorgebucaran/nvm.fish`
+2. Restart fish by entering `fish` in your active terminal
+3. Verify nvm is working by entering `nvm -v`
+4. Install the required version of Node.js by typing `nvm install 18`.
 
 *Working with MacOS M1 Silicon*: If you have macOS on M1 Silicon 2022, you can find instructions [here](https://benscheer.medium.com/how-to-install-nvm-and-node-on-macos-m1-silicon-in-2022-172fba82d92f).
 
@@ -75,9 +87,13 @@ feedback, open a new terminal and trying again or restart from step 1.
 2. Run the command `node -v`
   - This should print the current version of nodeJS installed (v18.x.x).
 3. Run the command `npm -v`
-  - This should print the current version of npm installed (v10.x.x).
+- This should print the current version of npm installed (v10.x.x).
 ![image](./assets/week1-getting-started/node/verification.png)
+![image](./assets/week1-getting-started/node/nvm_using_fish.png)
 4. If you find that some other version is being used, run the command `nvm use 18`. For Linux / Mac, you can change the default to 18 by running the command `nvm alias default 18`.
+
+> Note: The `alias` command is not compatible with `nvm.fish`. Instead, you can 
+> add a default version with the command `exec nvm use 18` in your `~/.config/fish/config.fish` file.
 
 # Installing Visual Studio Code (VSCode)
 
