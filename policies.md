@@ -13,7 +13,7 @@ There will be individual projects (previously known as assignments) and a team p
 * 10% Participation in synchronous, in-class activities
 * 20% Exam
 
-**Assignment of team project grades:** In cases where team members do not equally contribute to the project, we may assign different grades to different individuals, up to an extreme of deducting 50% of the team project grade for a student (which might arrise to 100% deduction for not contributing to the project at all). We will evaluate each individual's contribution on the basis of a variety of factors, including progress reports at weekly meetings, through inspecting version control history, through each students' self-reflection, and through each students' peer evaluation {during and/or} at the end of the project. We will make regular efforts to collect and distribute this feedback throughout the project — our ultimate goal is for all students to participate and receive full marks.
+**Assignment of team project grades:** In cases where team members do not equally contribute to the project, we may assign different grades to different individuals, up to an extreme of deducting 50% of the team project grade for a student (which might arise to 100% deduction for not contributing to the project at all). We will evaluate each individual's contribution on the basis of a variety of factors, including progress reports at weekly meetings, through inspecting version control history, through each students' self-reflection, and through each students' peer evaluation {during and/or} at the end of the project. We will make regular efforts to collect and distribute this feedback throughout the project — our ultimate goal is for all students to participate and receive full marks.
 
 **Assignment of final grades:** Although each instructor will use the same lesson plans and assignments, we expect that there may be variation in grades when compared between sections. Hence, each instructor will assign final grades to students in their sections, and reserve the right to apply different curves than are used by the other instructors. With each graded assignment, students will be provided with the distribution of all grades in their section.
 
@@ -77,6 +77,16 @@ Please don't be late. You are an essential part of the class. Your participation
 BE PRESENT WHEN YOU ARE ATTENDING CLASS. Please do not distract yourself from the class by doing other activities such as phone calls, email, facebook, chat/IM/texting, games, web surfing -- unless it has a direct bearing on the course. Then, by all means, surf away!
 
 Attendance in the synchronous meetings is expected. Sometimes you cannot avoid missing a class. If you need to be away from class, it is your responsibility to catch up on the materials discussed in the class.
+
+## Academic Integrity
+Students must work individually on all homework assignments.
+We encourage you to have high-level discussions with other students in the class about the assignments, however, we require that when you turn in an assignment, it is only your work. That is, copying any part of another student's assignment is strictly prohibited.
+If you steal someone else's work, you fail the class. You are responsible for protecting your work. If someone uses your work, with or without your permission, you fail the class.
+
+You are free to reuse small snippets of example code found on the Internet (e.g., via StackOverflow) provided that it is attributed. Use of co-pilot is also enrouraged.
+
+If you are concerned that by reusing and attributing that copied code it may appear that you didn't complete the assignment yourself, then please raise a discussion with the instructor. If you are in doubt whether using others' work is allowed, you should assume that it is NOT allowed unless the instructors confirm otherwise.
+
 
 ## Accommodations for Disabilities
 Students who have disabilities who wish to receive academic services and/or accommodations should visit the [Disability Resource Center](http://www.northeastern.edu/drc) at 20 Dodge Hall or call (617) 373-2675.

@@ -6,7 +6,7 @@ website: https://www.khoury.northeastern.edu/home/abhutta/
 photo: staff/bhutta.jpg
 section: CS4530 Sections 2, 3 & 5 
 office-hours: |
-    * In-Person: Monday and Thursday 130-230pm, Meserve 337
+    * In-Person: Monday and Thursday 135-230pm, Meserve 337
     * or by appointment
 ---
 
