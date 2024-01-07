@@ -187,9 +187,12 @@ Your first task is to implement the `_join`, `startGame` and `_leave` methods of
    *
    * Updates the game state to indicate that the player is ready to start the game.
    *
-   * If both players are ready, the game will start. If there was a prior game, and at least
-   * one of the players from the prior game is in this game, then the first player will be
-   * the other color. Otherwise, the first player will be red.
+   * If both players are ready, the game will start.
+   *
+   * The first player (red or yellow) is determined as follows:
+   *   - If neither player was in the last game in this area (or there was no prior game), the first player is red.
+   *   - If at least one player was in the last game in this area, then the first player will be the other color from last game.
+   *      For example: if in the last game, the first player was red, in this game, the first player is yellow.
    *
    * @throws InvalidParametersError if the player is not in the game (PLAYER_NOT_IN_GAME_MESSAGE)
    * @throws InvalidParametersError if the game is not in the WAITING_TO_START state (GAME_NOT_STARTABLE_MESSAGE)
