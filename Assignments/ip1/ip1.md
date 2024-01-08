@@ -103,6 +103,7 @@ State diagram for game status:
 %%{init: { 'theme':'forest', } }%%
 flowchart TD
 
+    I([New Game])--> A
     A[WAITING_FOR_PLAYERS] --> |1 player joins| A
     A --> |2nd player joins| B
     B --> |A player leaves| A
