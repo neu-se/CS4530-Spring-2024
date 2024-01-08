@@ -36,14 +36,14 @@ Before you begin, be sure to check that you have NodeJS 18.x installed, along wi
 Start by [downloading the starter code]({{site.baseurl}}{% link /Assignments/ip1/ip1-handout.zip %}). Extract the archive and run `npm install` to fetch the dependencies. Avery has provided you with some very basic sanity tests that you can extend for testing your implementation as you go. You can run these tests with the command `npm test ConnectFour` (note that many tests are *expected* to fail until you have begun to implement the assignment).
 
 ## Submission Instructions & Grading
-We will make an announcement when the autograder is open for submissions.
-
 You will submit your assignment to the instance of Autograder.io running at [neu.autograder.io](https://neu.autograder.io).
 Navigate to [neu.autograder.io](https://neu.autograder.io) in your web browser, click the "Sign in" button, and log in with your Northeastern account.
 You should then see the course listed on the neu.autograder.io home page.
+*The autograder will be open by Wed., Jan 10. We will publish an announcement indicating when it is open.*
 
 All students who were enrolled in the class on 1/7 were added to the roster on Autograder.io. 
-Please contact the instructors immediately via email or Piazza post if you do not see the course listed on Autograder.io and we add you to the autograder.
+If you do not see the course listed on Autograder.io, please contact the instructors immediately via email or Piazza post so that we can add you.
+If you haven't been added to the course roster yet, you can access the assignment submission page at [this direct link](https://neu.autograder.io/web/project/12).
 
 To submit your assignment: run the command `npm run zip` in the top-level directory of the handout. This will produce a file called `covey-town-townService.zip`. Submit that zip file on Autograder.io.
 
@@ -335,20 +335,3 @@ Grading for implementation tasks:
 * Handling LeaveGame: 2 points
 * Handling StartGame: 2 points
 * Handling invalid commands: 2 point
-
-
-## Submission Instructions
-Submit your assignment to the instance of Autograder.io running at [neu.autograder.io](https://neu.autograder.io).
-Navigate to [neu.autograder.io](https://neu.autograder.io) in your web browser, click the "Sign in" button, and log in with your Northeastern account.
-You should then see the course listed on the neu.autograder.io home page.
-Please contact the instructors immediately if you have difficulty accessing the course on Autograder.io.
-If you haven't been added to the course roster yet, you can access the assignment page at [this direct link](https://neu.autograder.io/web/project/12).
-*The autograder will be open by Weds Jan 10. We will publish an announcement indicating when it is open.*
-
-To submit your assignment: run the command `npm run zip` in the top-level directory of the handout. This will produce a file called `covey-town-townService.zip`. Submit that zip file on Autograder.io.
-
-Autograder.io will provide you with feedback on your submission, but note that it will *not* include any marks that will be assigned after we manually grade your submission for code style (these marks will remain hidden until it is graded). It may take several minutes for the grading script to complete.
-
-Autograder.io is configured to only provide feedback on at most 5 submissions per-24-hours per-student (submissions that fail to run or receive a grade of 0 are not counted in that limit). We strongly encourage you to lint and test your submission on your local development machine, and *not* rely on Autograder.io for providing grading feedback - relying on Autograder.io is a very slow feedback loop.
-To check for linter errors, run the command `npm run lint` from the terminal. The handout contains the same eslint configuration that is used by our grading script.
-Submission limit resets at 11am EST.
