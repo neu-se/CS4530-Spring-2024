@@ -35,7 +35,9 @@ The objectives of this assignment are to:
 Before you begin, be sure to check that you have NodeJS 18.x installed, along with VSCode. We have provided a [tutorial on setting up a development environment for this class]({{site.baseurl}}{% link tutorials/week1-getting-started.md %}) 
 Start by [downloading the starter code]({{site.baseurl}}{% link /Assignments/ip1/ip1-handout.zip %}). Extract the archive and run `npm ci` to fetch the dependencies. **Please extract the entire archive** instead of copying files over.
 
-While installing dependencies, you may see a warning that npm 9.x.x is required. Furthermore, you may see warnings about vulnerabilities. For this assignment, both of these warnings can be ignored.
+You can ignore any warnings about vulnerabilities:
+
+![image](./npm-warnings.jpg)
 
 Avery has provided you with some very basic sanity tests that you can extend for testing your implementation as you go. You can run these tests with the command `npm test ConnectFour` (note that many tests are *expected* to fail until you have begun to implement the assignment).
 
