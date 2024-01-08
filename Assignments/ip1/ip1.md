@@ -213,7 +213,7 @@ Your first task is to implement the `_join`, `startGame` and `_leave` methods of
    * The first player (red or yellow) is determined as follows:
    *   - If neither player was in the last game in this area (or there was no prior game), the first player is red.
    *   - If at least one player was in the last game in this area, then the first player will be the other color from last game.
-   *      For example: if in the last game, the first player was red, in this game, the first player is yellow.
+   *   - If a player from the last game *left* the game and then joined this one, they will be treated as a new player (not given the same color by preference).
    *
    * @throws InvalidParametersError if the player is not in the game (PLAYER_NOT_IN_GAME_MESSAGE)
    * @throws InvalidParametersError if the game is not in the WAITING_TO_START state (GAME_NOT_STARTABLE_MESSAGE)
@@ -335,3 +335,20 @@ Grading for implementation tasks:
 * Handling LeaveGame: 2 points
 * Handling StartGame: 2 points
 * Handling invalid commands: 2 point
+
+
+## Submission Instructions
+Submit your assignment to the instance of Autograder.io running at [neu.autograder.io](https://neu.autograder.io).
+Navigate to [neu.autograder.io](https://neu.autograder.io) in your web browser, click the "Sign in" button, and log in with your Northeastern account.
+You should then see the course listed on the neu.autograder.io home page.
+Please contact the instructors immediately if you have difficulty accessing the course on Autograder.io.
+If you haven't been added to the course roster yet, you can access the assignment page at [this direct link](https://neu.autograder.io/web/project/12).
+*The autograder will be fully operational by Weds Jan 10. You may use it in the meantime, but be aware that its test sutie is subject to change until the 10th* 
+
+To submit your assignment: run the command `npm run zip` in the top-level directory of the handout. This will produce a file called `covey-town-townService.zip`. Submit that zip file on Autograder.io.
+
+Autograder.io will provide you with feedback on your submission, but note that it will *not* include any marks that will be assigned after we manually grade your submission for code style (these marks will remain hidden until it is graded). It may take several minutes for the grading script to complete.
+
+Autograder.io is configured to only provide feedback on at most 5 submissions per-24-hours per-student (submissions that fail to run or receive a grade of 0 are not counted in that limit). We strongly encourage you to lint and test your submission on your local development machine, and *not* rely on Autograder.io for providing grading feedback - relying on Autograder.io is a very slow feedback loop.
+To check for linter errors, run the command `npm run lint` from the terminal. The handout contains the same eslint configuration that is used by our grading script.
+Submission limit resets at 11am EST.
