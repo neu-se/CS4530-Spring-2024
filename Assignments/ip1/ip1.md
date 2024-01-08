@@ -35,20 +35,40 @@ The objectives of this assignment are to:
 Before you begin, be sure to check that you have NodeJS 18.x installed, along with VSCode. We have provided a [tutorial on setting up a development environment for this class]({{site.baseurl}}{% link tutorials/week1-getting-started.md %}) 
 Start by [downloading the starter code]({{site.baseurl}}{% link /Assignments/ip1/ip1-handout.zip %}). Extract the archive and run `npm install` to fetch the dependencies. Avery has provided you with some very basic sanity tests that you can extend for testing your implementation as you go. You can run these tests with the command `npm test ConnectFour` (note that many tests are *expected* to fail until you have begun to implement the assignment).
 
-## Grading
+## Submission Instructions & Grading
+We will make an announcement when the autograder is open for submissions.
+
+You will submit your assignment to the instance of Autograder.io running at [neu.autograder.io](https://neu.autograder.io).
+Navigate to [neu.autograder.io](https://neu.autograder.io) in your web browser, click the "Sign in" button, and log in with your Northeastern account.
+You should then see the course listed on the neu.autograder.io home page.
+
+All students who were enrolled in the class on 12/7 were added to the roster on Autograder.io. 
+Please contact the instructors immediately via email or Piazza post if you do not see the course listed on Autograder.io and we add you to the autograder.
+
+To submit your assignment: run the command `npm run zip` in the top-level directory of the handout. This will produce a file called `covey-town-townService.zip`. Submit that zip file on Autograder.io.
+
 This submission will be scored out of 100 points, 90 of which will be automatically awarded by the grading script, with the remaining 10 manually awarded by the course staff.
 
 Your code will automatically be evaluated for linter errors and warnings. Submissions that have *any* linter errors will automatically receive a grade of 0. **Do not wait to run the linter until the last minute**. To check for linter errors, run the command `npm run lint` from the terminal. The handout contains the same eslint configuration that is used by our grading script.
 
 Your code will be automatically evaluated for functional correctness by a test suite that expands on the core tests that are distributed in the handout. 
-Your tests will be automatically evaluated for functional correctness by a process that will inject bugs into our reference solution: to receive full marks your tests must detect a minimum number of injected bugs. 
-Each submission will be graded against the same set of injected bugs (repeated submissions will not receive new/different injected bugs).
-You will __not__ receive detailed feedback on which injected bugs you do or do not find.
+Your tests will be automatically evaluated for functional correctness by a process that will inject bugs into our reference solution. 
+This process proceeds as follows:
+1. Your tests will be run against our (correct) reference solution. If any of your tests fail (i.e., a "false positive"), you will receive __no credit__ for your test cases.
+2. Your tests will be run against a sequence of injected bugs, and you will be awarded points for each bug your tests detect. Note: Each submission will be graded against the same set of injected bugs (repeated submissions will not receive new/different injected bugs).
+
+You will receive limited feedback on which injected bugs you do or do not find (e.g., "Your tests detected 5/7 bugs"). 
+You will additionally be able to request up to four automatic hints per section (e.g., tests for joining the game, tests for leaving the game) per day.
+The hint limit will reset at 11am EST.
+These hints will provide additional guidance on what to test based on which bugs your tests did not detect.
+Please take a moment to provide feedback on these hints through the autograder's interface.
 
 The autograding script will impose a strict rate limit of 5 submissions per 24 hours.
-Submissions that fail to grade will not count against the quota.
+This submission limit resets at 11am EST.
+Submissions that contain linter errors and warnings will not count towards that limit.
 This limit exists to encourage you to start early on this assignment: students generally report that assignments like this take between 3-20 hours.
-If you start early, you will be able to take full advantage of the resources that we provide to help you succeed: office hours, discussion on Piazza --- and the ability to have a greater total number of submission attempts.
+We strongly encourage you to lint and test your submission on your local development machine, and *not* rely on Autograder.io for providing grading feedback - relying on Autograder.io is a very slow feedback loop.
+If you start early, you will be able to take full advantage of the resources that we provide to help you succeed: office hours, discussion on Piazza --- and the ability to have a greater total number of submission attempts and hints.
 
 Your code will be manually evaluated for conformance to our course [style guide]({{ site.baseurl }}{% link style.md %}). This manual evaluation will account for 10% of your total grade on this assignment. We will manually evaluate your code for style on the following rubric:
 
@@ -315,18 +335,3 @@ Grading for implementation tasks:
 * Handling LeaveGame: 2 points
 * Handling StartGame: 2 points
 * Handling invalid commands: 2 point
-
-## Submission Instructions
-Submit your assignment to the instance of Autograder.io running at [neu.autograder.io](https://neu.autograder.io).
-Navigate to [neu.autograder.io](https://neu.autograder.io) in your web browser, click the "Sign in" button, and log in with your Northeastern account.
-You should then see the course listed on the neu.autograder.io home page.
-Please contact the instructors immediately if you have difficulty accessing the course on Autograder.io.
-If you haven't been added to the course roster yet, you can access the assignment page at [this direct link](https://neu.autograder.io/web/project/12).
-
-To submit your assignment: run the command `npm run zip` in the top-level directory of the handout. This will produce a file called `covey-town-townService.zip`. Submit that zip file on Autograder.io.
-
-Autograder.io will provide you with feedback on your submission, but note that it will *not* include any marks that will be assigned after we manually grade your submission for code style (these marks will remain hidden until it is graded). It may take several minutes for the grading script to complete.
-
-Autograder.io is configured to only provide feedback on at most 5 submissions per-24-hours per-student (submissions that fail to run or receive a grade of 0 are not counted in that limit). We strongly encourage you to lint and test your submission on your local development machine, and *not* rely on Autograder.io for providing grading feedback - relying on Autograder.io is a very slow feedback loop.
-To check for linter errors, run the command `npm run lint` from the terminal. The handout contains the same eslint configuration that is used by our grading script.
-Submission limit resets at 11am EST.
