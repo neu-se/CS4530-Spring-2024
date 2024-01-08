@@ -58,7 +58,7 @@ This process proceeds as follows:
 2. Your tests will be run against a sequence of injected bugs, and you will be awarded points for each bug your tests detect. Note: Each submission will be graded against the same set of injected bugs (repeated submissions will not receive new/different injected bugs).
 
 You will receive limited feedback on which injected bugs you do or do not find (e.g., "Your tests detected 5 bugs"). 
-You will additionally be able to request up to four automatic hints per section (e.g., tests for joining the game, tests for leaving the game) per day.
+You will additionally be able to request up to 2 automatic hints per testing section (e.g., tests for joining the game, tests for leaving the game) per day.
 The hint limit will reset at 11am EST.
 These hints will provide additional guidance on what to test based on which bugs your tests did not detect.
 Please take a moment to provide feedback on these hints through the autograder's interface.
