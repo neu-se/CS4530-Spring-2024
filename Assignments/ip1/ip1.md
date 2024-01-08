@@ -42,7 +42,7 @@ You will submit your assignment to the instance of Autograder.io running at [neu
 Navigate to [neu.autograder.io](https://neu.autograder.io) in your web browser, click the "Sign in" button, and log in with your Northeastern account.
 You should then see the course listed on the neu.autograder.io home page.
 
-All students who were enrolled in the class on 12/7 were added to the roster on Autograder.io. 
+All students who were enrolled in the class on 1/7 were added to the roster on Autograder.io. 
 Please contact the instructors immediately via email or Piazza post if you do not see the course listed on Autograder.io and we add you to the autograder.
 
 To submit your assignment: run the command `npm run zip` in the top-level directory of the handout. This will produce a file called `covey-town-townService.zip`. Submit that zip file on Autograder.io.
