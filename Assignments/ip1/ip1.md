@@ -193,7 +193,7 @@ Your first task is to implement the `_join`, `startGame` and `_leave` methods of
    * The first player (red or yellow) is determined as follows:
    *   - If neither player was in the last game in this area (or there was no prior game), the first player is red.
    *   - If at least one player was in the last game in this area, then the first player will be the other color from last game.
-   *      For example: if in the last game, the first player was red, in this game, the first player is yellow.
+   *   - If a player from the last game *left* the game and then joined this one, they will be treated as a new player (not given the same color by preference).
    *
    * @throws InvalidParametersError if the player is not in the game (PLAYER_NOT_IN_GAME_MESSAGE)
    * @throws InvalidParametersError if the game is not in the WAITING_TO_START state (GAME_NOT_STARTABLE_MESSAGE)
@@ -322,6 +322,7 @@ Navigate to [neu.autograder.io](https://neu.autograder.io) in your web browser, 
 You should then see the course listed on the neu.autograder.io home page.
 Please contact the instructors immediately if you have difficulty accessing the course on Autograder.io.
 If you haven't been added to the course roster yet, you can access the assignment page at [this direct link](https://neu.autograder.io/web/project/12).
+*The autograder will be fully operational by Weds Jan 10. You may use it in the meantime, but be aware that its test sutie is subject to change until the 10th* 
 
 To submit your assignment: run the command `npm run zip` in the top-level directory of the handout. This will produce a file called `covey-town-townService.zip`. Submit that zip file on Autograder.io.
 
