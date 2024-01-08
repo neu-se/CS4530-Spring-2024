@@ -343,7 +343,7 @@ Navigate to [neu.autograder.io](https://neu.autograder.io) in your web browser, 
 You should then see the course listed on the neu.autograder.io home page.
 Please contact the instructors immediately if you have difficulty accessing the course on Autograder.io.
 If you haven't been added to the course roster yet, you can access the assignment page at [this direct link](https://neu.autograder.io/web/project/12).
-*The autograder will be fully operational by Weds Jan 10. You may use it in the meantime, but be aware that its test sutie is subject to change until the 10th* 
+*The autograder will be open by Weds Jan 10. We will publish an announcement indicating when it is open.*
 
 To submit your assignment: run the command `npm run zip` in the top-level directory of the handout. This will produce a file called `covey-town-townService.zip`. Submit that zip file on Autograder.io.
 
