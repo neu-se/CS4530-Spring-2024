@@ -1,0 +1,43 @@
+Roles:
+
+Owner/Manager
+Prospective Customer
+Chef
+
+
+* As Owner/Manager I want
+
+to be able to add and delete menu items so I can change the menu easily (Essential)
+
+to be able to change the price of a menu item so I can respond to changing 
+supply costs. (Essential)
+
+to have pictures of my dises on the web site, so customers will see how good
+our food looks (Desirable)
+
+
+* As a Prospective Customer, I want
+
+the web site to show what is on the menu today, so I can see if they have
+what I want (Essential)
+
+to have nice pictures of the restaurant, so I can get an idea of whether I
+want to go there. (Essential) 
+
+to be easy to navigate to different portions of the menu, so I can easily
+distinguish appetizers/main dishes/desserts, etc. (Desirable)
+
+to have possible substitutions listed, so I can know whether a dish can be
+modified to meet my dietary needs. (Extension)
+
+* As a chef, I want
+
+the web site to keep track of how many of each dish was ordered, so I can
+know how much of each ingredient to buy. (Essential? Desirable?)
+
+the web site to show customers what substitutions are possible, so I can keep track of
+what variations I need to prepare for. (Extension)
+
+
+
+
