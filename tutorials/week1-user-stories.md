@@ -16,7 +16,7 @@ Contents:
 
 # User Stories and Conditions of Satisfaction
 
-A user story is an informal, general explanation of a software feature written from the perspective of the **end user or customer**. 
+A user story is an informal, general explanation of a software feature written from the perspective of the **end user or customer**. A user story is always of the following form:
 
 As a <code>&lt;role&gt;</code> I can <code>&lt;perform action&gt;</code> so that I can <code>&lt;receive benefit&gt;</code>
 
