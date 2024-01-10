@@ -40,7 +40,7 @@ Start by [downloading the starter code]({{site.baseurl}}{% link /Assignments/ip1
 
 You may see the following warnings:
 
-![image](./npm-warnings.jpg)
+![image]({{site.baseurl}}{% link /Assignments/ip1/npm-warnings.jpg %})
 
 You can safely ignore these warnings: the assignment works with npm 10, and the vulnerabilities are not relevant for this assignment. (Do **not** run `npm audit fix` or `npm audit fix --force` as this may break your copy of the handout code. If this happens to you, please restart with a fresh copy of the handout.)
 
