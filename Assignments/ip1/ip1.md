@@ -36,7 +36,15 @@ The objectives of this assignment are to:
 ## Getting started with this assignment
 
 Before you begin, be sure to check that you have NodeJS 18.x installed, along with VSCode. We have provided a [tutorial on setting up a development environment for this class]({{site.baseurl}}{% link tutorials/week1-getting-started.md %}) 
-Start by [downloading the starter code]({{site.baseurl}}{% link /Assignments/ip1/ip1-handout.zip %}). Extract the archive and run `npm install` to fetch the dependencies. Avery has provided you with some very basic sanity tests that you can extend for testing your implementation as you go. You can run these tests with the command `npm test ConnectFour` (note that many tests are *expected* to fail until you have begun to implement the assignment).
+Start by [downloading the starter code]({{site.baseurl}}{% link /Assignments/ip1/ip1-handout.zip %}). Extract the archive and run `npm ci` to fetch the dependencies. **Please extract the entire archive** instead of copying files over.
+
+You may see the following warnings:
+
+![image](./npm-warnings.jpg)
+
+You can safely ignore these warnings: the assignment works with npm 10, and the vulnerabilities are not relevant for this assignment. (Do **not** run `npm audit fix` or `npm audit fix --force` as this may break your copy of the handout code. If this happens to you, please restart with a fresh copy of the handout.)
+
+Avery has provided you with some very basic sanity tests that you can extend for testing your implementation as you go. You can run these tests with the command `npm test ConnectFour` (note that many tests are *expected* to fail until you have begun to implement the assignment).
 
 ## Submission Instructions & Grading
 You will submit your assignment to the instance of Autograder.io running at [neu.autograder.io](https://neu.autograder.io).
