@@ -23,6 +23,9 @@ Students implemented a single game, [Tic-Tac-Toe](https://en.wikipedia.org/wiki/
 The objective for this semester's individual project is to extend this new `GameArea` abstraction, implementing [Connect Four](https://en.wikipedia.org/wiki/Connect_Four) as a new game that can be played within a `GameArea`.
 This implementation effort will be split across two deliverables. In this first deliverable, you will implement and test the core backend components for this feature, and in the second deliverable, you will implement and test the frontend components. 
 
+## Change Log
+* 1/9/2024: Fixed a typo in handout (`status` in the `ConnectFourGame` constructor should be `WAITING_FOR_PLAYERS`, not `WAITING_TO_START`), removed reference to `shared` directory in `tsconfig.json`.
+
 ## Objectives of this assignment
 The objectives of this assignment are to:
 *  Get you familiar with the basics of TypeScript, VSCode, and the project codebase
