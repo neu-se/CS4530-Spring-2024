@@ -25,6 +25,7 @@ This implementation effort will be split across two deliverables. In this first 
 
 ## Change Log
 * 1/9/2024: Fixed a typo in handout (`status` in the `ConnectFourGame` constructor should be `WAITING_FOR_PLAYERS`, not `WAITING_TO_START`), removed reference to `shared` directory in `tsconfig.json`.
+* 1/12/2024: Added a detail in the spec of `startGame` method for determining the `firstPlayer` given a prior game to remove any ambiguity (The first player of the game will be the other color of the last game, if at least one player from the previous game joins the game and they get the same color that they were in the previous game).
 
 ## Objectives of this assignment
 The objectives of this assignment are to:
