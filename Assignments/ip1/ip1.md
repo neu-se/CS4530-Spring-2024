@@ -223,7 +223,7 @@ Your first task is to implement the `_join`, `startGame` and `_leave` methods of
    *
    * The first player (red or yellow) is determined as follows:
    *   - If neither player was in the last game in this area (or there was no prior game), the first player is red.
-   *   - If at least one player was in the last game in this area, then the first player will be the other color from last game.
+   *   - If at least one player was in the last game in this area and they get the same color that they were in the last game, then the first player will be the other color from last game.
    *   - If a player from the last game *left* the game and then joined this one, they will be treated as a new player (not given the same color by preference).
    *
    * @throws InvalidParametersError if the player is not in the game (PLAYER_NOT_IN_GAME_MESSAGE)
