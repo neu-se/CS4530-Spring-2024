@@ -25,6 +25,7 @@ This implementation effort will be split across two deliverables. In this first 
 
 ## Change Log
 * 1/9/2024: Fixed a typo in handout (`status` in the `ConnectFourGame` constructor should be `WAITING_FOR_PLAYERS`, not `WAITING_TO_START`), removed reference to `shared` directory in `tsconfig.json`.
+* 1/12/2024: Added a detail in the spec of `startGame` method for determining the `firstPlayer` given a prior game to remove any ambiguity (The first player of the game will be the other color of the last game, if at least one player from the previous game joins the game and they get the same color that they were in the previous game).
 
 ## Objectives of this assignment
 The objectives of this assignment are to:
@@ -222,7 +223,7 @@ Your first task is to implement the `_join`, `startGame` and `_leave` methods of
    *
    * The first player (red or yellow) is determined as follows:
    *   - If neither player was in the last game in this area (or there was no prior game), the first player is red.
-   *   - If at least one player was in the last game in this area, then the first player will be the other color from last game.
+   *   - If at least one player was in the last game in this area and they get the same color that they were in the last game, then the first player will be the other color from last game.
    *   - If a player from the last game *left* the game and then joined this one, they will be treated as a new player (not given the same color by preference).
    *
    * @throws InvalidParametersError if the player is not in the game (PLAYER_NOT_IN_GAME_MESSAGE)
