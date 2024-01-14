@@ -20,6 +20,8 @@ The [Software Engineering Radio podcast](https://www.se-radio.net) (also availab
 ### Code style
 
 * Research paper: [To camelcase or under_score](https://ieeexplore.ieee.org/document/5090039), Dave Binkley et al
+* Research paper: [I know what you did last summer: an investigation of how developers spend their time](https://dl.acm.org/doi/10.5555/2820282.2820289), Minelli, Mocci and Lanza
+* Research paper: [A metric for software readability](https://dl.acm.org/doi/10.1145/1390630.1390647), Buse and Weimer
 * Book (free via library): ["Refactoring: Improving the Design of Existing Code" By Martin Fowler](https://learning.oreilly.com/library/view/refactoring-improving-the/9780134757681/)<br />
 The definitive list of "code smells" that should be avoiding in programming, matched up with "refactoring" techniques to improve that code
 
