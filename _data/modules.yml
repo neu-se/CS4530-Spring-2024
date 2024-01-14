@@ -11,8 +11,8 @@
   name: What Makes a Good Test Suite?
   page: 
 2b:
-  name: General Best Practices
-  page: 
+  name: Code-Level Design Principles
+  page: /modules/4-code-level-design
 3a:
   name: Design Patterns
   page: 
