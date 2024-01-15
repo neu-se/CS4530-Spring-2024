@@ -16,7 +16,7 @@ Run `npm run test` to run the tests of the existing code (or run the script in V
 
 Your team is writing a simulator for a traffic light in a large city.  Whitley, an intern in your group, has written the code in TrafficLight.ts, and the tests in TrafficLight.test.ts
 
-Your team leader, Adrian, has asked you to critique Whitley's code based on the Five Code-Level Design Principles.  Adrian says that he has already received some feedback from the client, who complained that not all traffic lights change every 20 seconds (indeed, the times for red, yellow, and green may all be different, and may be different at different intersections.)
+Your team leader, Adrian, has asked you to critique Whitley's code based on the Five Code-Level Design Principles.  Adrian says that he has already received some feedback from the client, who complained that the traffic engineers like to be able to fine-tune the durations of the red, yellow, and green based on actual traffic flow.  They also pointed out that some traffic lights have options other than red, yellow, and green, such as "left-turn green".
 
 ### Part 1: Critique Whitley's code.
 
@@ -24,7 +24,7 @@ In a text file, list several ways in which Whitley's code violates the 5 Princip
 
 ### Part 2: Improve Whitley's code
 
-Write a new file, called betterTrafficLight.ts, which solves the problem raised by the customer, while adhering better to the 5 Principles.  Test your code by changing TrafficLight.test.ts to import from betterTrafficLight.ts
+Write a new file, called betterTrafficLight.ts, which Principles, and addresses some of the problems raised by the customer.  Test your code by changing TrafficLight.test.ts to import from betterTrafficLight.ts
 
 ### Part 3: Critique your own code
 
