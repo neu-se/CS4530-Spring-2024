@@ -319,6 +319,13 @@ There are four types of commands that the `ConnectFourGameArea` will receive, wh
 
 Avery has provided a complete test suite for `handleCommand` - you do not need to write any additional tests.
 
+> **Clarification**
+> 
+> Invalid commands regarding when a "game is not in progress" refers to the game instance itself (Does the game exist?).
+> It does _**not**_ refer to the game status (state) being "IN_PROGRESS".
+> 
+> Hint: Read through the `GameArea` class to understand the difference between a game instance and a game state (`ConnectFourGame`).
+
 <details><summary markdown="span">View the specification for this methods</summary>
 {% highlight typescript %}
   /**
