@@ -27,6 +27,7 @@ This implementation effort will be split across two deliverables. In this first 
 * 1/9/2024: Fixed a typo in handout (`status` in the `ConnectFourGame` constructor should be `WAITING_FOR_PLAYERS`, not `WAITING_TO_START`), removed reference to `shared` directory in `tsconfig.json`.
 * 1/12/2024: Added a detail in the spec of `startGame` method for determining the `firstPlayer` given a prior game to remove any ambiguity (The first player of the game will be the other color of the last game, if at least one player from the previous game joins the game and they get the same color that they were in the previous game).
 * 1/17/2024: Add clarification to `_leave` method
+* 1/18/2024: Add clarification to `handleCommand` method
 
 ## Objectives of this assignment
 The objectives of this assignment are to:
@@ -318,6 +319,13 @@ The `ConnectFourGameArea` receives `InteractableCommand`s from players who enter
 There are four types of commands that the `ConnectFourGameArea` will receive, which map directly to the three methods of `ConnectFourGame` that you implemented in the previous task. 
 
 Avery has provided a complete test suite for `handleCommand` - you do not need to write any additional tests.
+
+> **Clarification**
+> 
+> Invalid commands regarding when a "game is not in progress" refers to the game instance itself (Does the game exist?).
+> It does _**not**_ refer to the game status (state) being "IN_PROGRESS".
+> 
+> Hint: Read through the `GameArea` class to understand the difference between a game instance and a game state (`ConnectFourGame`).
 
 <details><summary markdown="span">View the specification for this methods</summary>
 {% highlight typescript %}
