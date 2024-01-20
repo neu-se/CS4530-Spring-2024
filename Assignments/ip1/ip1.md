@@ -26,6 +26,8 @@ This implementation effort will be split across two deliverables. In this first 
 ## Change Log
 * 1/9/2024: Fixed a typo in handout (`status` in the `ConnectFourGame` constructor should be `WAITING_FOR_PLAYERS`, not `WAITING_TO_START`), removed reference to `shared` directory in `tsconfig.json`.
 * 1/12/2024: Added a detail in the spec of `startGame` method for determining the `firstPlayer` given a prior game to remove any ambiguity (The first player of the game will be the other color of the last game, if at least one player from the previous game joins the game and they get the same color that they were in the previous game).
+* 1/17/2024: Add clarification to `_leave` method
+* 1/18/2024: Add clarification to `handleCommand` method
 
 ## Objectives of this assignment
 The objectives of this assignment are to:
@@ -197,6 +199,16 @@ export type ConnectFourColor = 'Red' | 'Yellow';
 
 Your first task is to implement the `_join`, `startGame` and `_leave` methods of `ConnectFourGame`. To implement these methods, you should not need to read any other parts of the codebase besides `Game.ts` and `ConnectFourGame.ts`. You might find it useful or necessary to modify the constructor of `ConnectFourGame` to initialize the state of the game, and to add private instance variables and/or helper methods.
 
+> **Clarification** 
+> 
+> `_leave` method: If the game is in progress, the game will be over after a player leaves. 
+> A winning player is decided according to the game rules of Connect Four. 
+> Leaving a game that leaves the game status to "OVER" would be considered a "forfeit" by the player who left the game.
+> A new game must be initialized after the game is over and a game object is not "re-used" once it is "IN_PROGRESS".
+> _Think about a ConnectFourGame object or instance as a single game._
+> 
+> About tests: If you are not sure about the specification of a method, you can always use tests as a method to validate your assumptions.
+
 {::options parse_block_html="true" /}
 <details><summary markdown="span">View the specification for these methods</summary>
 {% highlight typescript %}
@@ -307,6 +319,13 @@ The `ConnectFourGameArea` receives `InteractableCommand`s from players who enter
 There are four types of commands that the `ConnectFourGameArea` will receive, which map directly to the three methods of `ConnectFourGame` that you implemented in the previous task. 
 
 Avery has provided a complete test suite for `handleCommand` - you do not need to write any additional tests.
+
+> **Clarification**
+> 
+> Invalid commands regarding when a "game is not in progress" refers to the game instance itself (Does the game exist?).
+> It does _**not**_ refer to the game status (state) being "IN_PROGRESS".
+> 
+> Hint: Read through the `GameArea` class to understand the difference between a game instance and a game state (`ConnectFourGame`).
 
 <details><summary markdown="span">View the specification for this methods</summary>
 {% highlight typescript %}

@@ -24,7 +24,7 @@ In a text file, list several ways in which Whitley's code violates the 5 Princip
 
 ### Part 2: Improve Whitley's code
 
-Write a new file, called betterTrafficLight.ts, which solves the problem raised by the customer, while adhering better to the 5 Principles.  Test your code by changing TrafficLight.test.ts to import from betterTrafficLight.ts
+Write a new file, called betterTrafficLight.ts, which Principles, and addresses some of the problems raised by the customer.  Test your code by changing TrafficLight.test.ts to import from betterTrafficLight.ts
 
 ### Part 3: Critique your own code
 
