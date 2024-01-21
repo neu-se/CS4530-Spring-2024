@@ -8,19 +8,19 @@
   name: Typescript & Test Driven Development
   page: /modules/2-requirements-to-code
 2a:
-  name: What Makes a Good Test Suite?
+  name: Test Adequacy
   page: 
 2b:
-  name: General Best Practices
+  name: Code-Level Design Patterns
   page: 
 3a:
-  name: Design Patterns
+  name: Interaction-Level Design Patterns
   page: 
 3b:
   name: Concurrency Patterns
   page: 
 4a:
-  name: Software Process
+  name: Software Processes & Agile
   page: 
 4b:
   name: React Part 1 (Introduction)
