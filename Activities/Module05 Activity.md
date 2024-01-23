@@ -10,7 +10,11 @@ Start by downloading the
 [starter code]({{ site.baseurl }}{% link Activities/module05-design-pattern-activity-weatherstation.zip %}).
 
 ## Change Log
-* 2024-01-23: Migrate ts-node implementation to tsx for node 19+ compatibility
+* 2024-01-23: Migrate ts-node implementation to tsx for node 18.18 compatibility
+
+## Instructions to install Node-Version
+* nvm install 18.18
+* nvm use 18.18
 
 ## Instructions
 
