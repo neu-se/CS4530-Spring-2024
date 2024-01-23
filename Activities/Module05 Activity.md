@@ -9,6 +9,15 @@ This project will give you practice in coding using the *observer* design patter
 Start by downloading the 
 [starter code]({{ site.baseurl }}{% link Activities/module05-design-pattern-activity-weatherstation.zip %}).
 
+## Change Log
+* 2024-01-23: Migrate ts-node implementation to tsx for node 18.18 compatibility
+
+## Instructions to install Node-Version
+* nvm install 18.18
+* nvm use 18.18
+
+## Instructions
+
 To run it on your computer, run `npm install` to fetch the dependencies for the project, and then run `npm run demo`, which should produce the output like the following:
 ```
 Current conditions: 80F degrees and 65% humidity
