@@ -4,7 +4,7 @@ title: "Individual Project 1"
 permalink: /assignments/ip1
 parent: Assignments
 nav_order: 1
-due_date: "Wednesday January 24, 11:00am EST"
+due_date: "Monday January 29, 11:00am EST"
 submission_notes: Submit via Autograder.io at neu.autograder.io
 ---
 
@@ -28,6 +28,7 @@ This implementation effort will be split across two deliverables. In this first 
 * 1/12/2024: Added a detail in the spec of `startGame` method for determining the `firstPlayer` given a prior game to remove any ambiguity (The first player of the game will be the other color of the last game, if at least one player from the previous game joins the game and they get the same color that they were in the previous game).
 * 1/17/2024: Add clarification to `_leave` method
 * 1/18/2024: Add clarification to `handleCommand` method
+* 1/23/2024: As explained on Piazza, due to an autograder bug, the submission deadline has been extended to Monday January 29
 
 ## Objectives of this assignment
 The objectives of this assignment are to:
