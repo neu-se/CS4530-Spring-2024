@@ -31,7 +31,7 @@ This tutorial covers the basic concepts of react. By the end of this tutorial, y
 
 Let's use **npx** and **create-next-app** to create a new Next.Js project 
 
--   **npx** stands for Node Package Execute. It is a runner that can execute any package that you want from the npm registry without even installing that package. In this case npx tool temporarily installs the create-next-app npm package and uses it to create our project.
+-   **npx** stands for Node Package Execute (Part of the npm package since version 5.2). It is a runner that can execute any package that you want from the npm registry without even installing that package. In this case npx tool temporarily installs the create-next-app npm package and uses it to create our project.
 
 
 - Please check the following reference to the Next.Js boiler plate and getting started with framework 
@@ -39,7 +39,7 @@ Let's use **npx** and **create-next-app** to create a new Next.Js project
 
 1. We use the create-next-app npx package to create an application that creates a fully-featured TS package.
 
-    ```ts
+    ```bash
     npx create-next-app my-app
     ```
 
@@ -49,21 +49,22 @@ Let's use **npx** and **create-next-app** to create a new Next.Js project
     ![image](./assets/week4-react/start-details.png)
 
 2. Navigate to the project directory using the command:
-    ```ts
+    ```bash
     cd my-app
     ```
 3. To start the development server for React, run the command:
-    ```ts
+    ```bash
     npm run dev
     ```
 4. Navigate to http://localhost:3000/ to see the default react page.
     - After a few seconds, a browser window opens, with our app running:
       ![image](./assets/week4-react/start.png)
-5. Chakra UI components can be reused and the library can be installed for Next.js with following command:
-    ```plaintext
+5. [Chakra UI components](https://chakra-ui.com) can be reused and the library can be installed for Next.js with following command:
+    ```bash
     npm i --save @chakra-ui/react @chakra-ui/next-js
     ```
     ![image](./assets/week4-react/chakra.png)
+    > The save flag is used to add the dependency in the package.json file. 
 
 <!-- 
 -   **create-react-app** is a command-line tool that we can use to quickly create a React and TypeScript app with lots of useful pieces.
@@ -104,17 +105,19 @@ pieces where each piece can be used in isolation.
 <a href="https://codesandbox.io/s/nervous-morse-o3pwqm?file=/src/tutorial/CreateFunctionComponent.tsx" target="_blank">view in sandbox</a>
 
 The simplest method to define a component is to write a function in Javascript. These components are also widely referred as functional stateless components but in the recent versions of React, they have the capabilities to contain state as well.
-```ts
+```tsx
 import * as React from "react";
 
-interface Props = {name?: string};
+interface Props {
+    name?: string
+};
 
 function App (props: Props) {
   return (
       <div className="App">
         <h1>Welcome to React with Typescript Tutorial.</h1>
-  </div>
-);
+      </div>
+  );
 }
 
 export default App;
@@ -139,22 +142,26 @@ export default App;
 
 <a href="https://codesandbox.io/s/nervous-morse-o3pwqm?file=/src/tutorial/TemplateForFunction.tsx" target="_blank">view in sandbox</a>
 
-```ts
+```tsx
 import * as React from "react";
 
-interface Props = {property1?: value1, property2?: value2}
+interface Props {
+    property1?: value1, 
+    property2?: value2
+}
 
 function ComponentName (props: Props) {
- const handler = () => {
- ...
- };
-
- return (
-  <div>Our TSX</div>
- );
+  const handler = () => {
+    /* ... */
+  };
+    
+  return (
+    <div>Our TSX</div>
+  );
 };
+
 ComponentName.defaultProps = {
- ...
+  /* ... */  
 };
 
 export default ComponentName;
@@ -167,7 +174,7 @@ React components are similar to JavaScript functions and can accept arbitrary ar
 
 - Create a new file in `src/` directory called `Header.tsx`
 - Create and export a function called Header in the file as below:
-```ts
+```tsx
 import React from "react";
 
 interface IProps {
@@ -192,11 +199,11 @@ export default Header;
 - In App.tsx:
   - Remove the code in h1 tags.
   - Import the Header component as below:
-    - ```ts
+    - ```tsx
        import Header from './Header';
       ```
   - Update the contents of return as below:
-    - ```ts
+    - ```tsx
        <div className="App-header">
          <Header />
          <Header name="John" />
@@ -212,11 +219,13 @@ A few things to note from the above example:
 - Curly braces ({}) in JSX/TSX are used as a connection between the data to be displayed in the view and the component’s logic for displaying the data in the view.
   - In our example, `{props.name}` will reflect the value of the property `name` in the view(html) for the cases when the values "John" and "Jane" are passed as props for the `name` property.
   - If no props are passed for an instance of the component, then it will display the default value of props.
+> Note: React uses a special syntax called [JSX](https://react.dev/learn/writing-markup-with-jsx) which allows us to mix HTML with JavaScript. The curly brackets `{}` lets the JSX parser know that the content inside the brackets is JavaScript.
+
 
 ## State 
 State management is just a means of facilitating data sharing and communication among components. It creates a concrete data structure that you can read and write to reflect the state of your program.
 
-```ts
+```tsx
 const [counter, setCounter] = useState(0)
 ```
 
@@ -235,7 +244,7 @@ Changes in state and/or props will both cause our React component to re-render. 
 
 
 Passing values from a parent component to a child component is simple. We only have to pass the values as props of the child component. The child component can then use the props object to output results. In the example code you will see that CounterContent component accepts a counter prop which is then used to display the value inside div element. 
-```ts
+```tsx
 import { useState } from "react";
 
 interface CounterContentProps {
@@ -276,7 +285,7 @@ In the example below we have four children components:
 
 All callback functions passed to the children component are declared in Counter function which is the parent component that maintains the state value for counter.
 
-```ts
+```tsx
 import { useState } from "react";
 
 interface CounterContentProps {
@@ -387,7 +396,7 @@ is slightly different in React:
 -   React provides an equivalent of each event that you might be familiar with from
     standard HTML DOM. Events typing can be imported directly from react as shown in the example below:
 
-```ts
+```tsx
 import { MouseEvent } from "react";
 
 function HelloWorld() {
@@ -421,7 +430,7 @@ In this section we will see how we can add state to a React Component using the 
 
 1. We'll start by defining and initializing state for the number of times the button is clicked, by adding the a state variable as follows:
 
-```ts
+```tsx
 import {useState} from 'react';
 
 function Counter() {
@@ -443,7 +452,7 @@ This line of code looks a little strange, so let's break it down:
 
 2. Let's add a function to update the state of the variable:
 
-```ts
+```tsx
 function incrementCount() {
     setCount(count + 1);
 }
@@ -453,7 +462,7 @@ function incrementCount() {
 
 3. Next we'll make the component return the count along with a button to increment the count when clicked. Final function code will be as follows:
 
-```ts
+```tsx
 import { useState } from "react";
 function Counter() {
     const [count, setCount] = useState(0);
@@ -477,15 +486,15 @@ After we've got our heads around the code needed to define state, accessing and 
 
 #### Updating Arrays in State
 Suppose we want to maintain an array in our state object.
-```ts
+```tsx
 const [list, setList] = useState([]);
 ```
 Now suppose we want to add an element to this list and have the component re-render to reflect the changes. We might try pushing an item to the list like so:
-```ts
+```tsx
 list.push(element); // doesn't work
 ```
 However, React will not re-render the component as it does not detect a change in the state. This is because the object referenced in the state is the same before and after pushing the element, and so to React, the object looks the same because the reference is the same. To get around this, we must invoke the `setList` function to create a new reference so that React will detect the change and re-render the component. The easiest way in this case would be to use the spread operator (`...`) to make a copy of the existing list and push a new element to the new list:
-```ts
+```tsx
 const newList = [...list]; // copy the current list
 newList.push(element);
 setList(newList)
@@ -498,15 +507,17 @@ setList(newList)
 Now let's have a look at how to invoke the code to execute at a certain point in the component's lifecycle.
 Older versions of React consisted of different Lifecycle hooks that allowed a user to hook into various phases of component rendering such as componentDidMount, ComponentDidUpdate, etc. which have all been condensed into a single function called useEffect(). Let us observe how this hook behaves by printing out the count in browser console.
 
+> The new functional component system in React (moving away from class based) added amazing syntactic sugar to the React ecosystem. Use of a hook to control component lifecycle is an example such as the `useEffect()` hook.
+
 1. As always, we will start by importing the function from the react library:
 
-```ts
+```tsx
 import { useEffect } from "react";
 ```
 
 2.  Next we will add the function to our existing counter component:
 
-```ts
+```tsx
 useEffect(() => {
     console.log(`The current count is ${count}`);
 }, []);
@@ -523,7 +534,7 @@ Let's break down this code to understand what is happening:
 
 -   If no second parameter is provided, will cause the arrow function to be invoked first on mount and then on every re-render.
 
-```ts
+```tsx
 useEffect(() => {
     console.log(`The current count is ${count}`);
 });
@@ -532,15 +543,35 @@ useEffect(() => {
 -   Additionally we can also pass the variable in the array to observe only changes related to a particular value (as below).
 -   Now we can see that the componenet will render everytime the value of count is changed.
 
-```ts
+```tsx
 useEffect(() => {
     console.log(`The current count is ${count}`);
 }, [count]);
 ```
 
+-  We can also return a function from the useEffect hook which will be called when the component is unmounted. This is useful for cleaning up any resources that the component may have used.
+
+```tsx
+useEffect(() => {
+    console.log(`The current count is ${count}`);
+    return () => {
+        console.log("The component is unmounting");
+    };
+}, [count]);
+```
+
+> Let's break this down:
+> 
+>|                       | useEffect pattern                                    |
+>|-----------------------|------------------------------------------------------|
+>| Run on every render   | `useEffect(() => {   /* ... */ });`                  |
+>| Run when some changes | `useEffect(() => {   /* ... */ }, [array of Deps]);` |
+>| Run on mount          | `useEffect(() => {   /* ... */ }, []);`              |
+>| Run on cleanup        | `useEffect(() => {   return (     /* ... */   ) });` |
+
 4.  Finally, our component counter will look like:
 
-```ts
+```tsx
 import { useState } from "react";
 import { useEffect } from "react";
 
@@ -567,7 +598,7 @@ export default Counter;
 ```
 #### Object Dependencies in UseEffect
 Consider a case where useEffect depends on an object:
-```ts
+```tsx
 import { useState } from "react";
 import { useEffect } from "react";
 
@@ -598,7 +629,7 @@ In the example above, we've modified the counter to be an object containing both
 
 Similar to the list case for useState, updating an attribute of an object and setting the state variable to that same object reference will not cause a re-render, and useEffect will not detect a change in its dependencies, even though we have changed one of the attributes. To properly invoke a useEffect call, we must change the object reference itself:
 
-```ts
+```tsx
 function Counter() {
     const [counter, setCounter] = useState({ count: 0, increment: 1 });
 
@@ -624,7 +655,7 @@ export default Counter;
 
 The useEffect hook will now be invoked with each button click. However, our useEffect is dependent on the entire `counter` object, meaning that a change to any of its attributes will cause the useEffect hook to be called, which is not always a desired behavior. We can get around this by being more specific in our dependency list: 
 
-```ts
+```tsx
 function Counter() {
     const [counter, setCounter] = useState({ count: 0, increment: 1 });
 
