@@ -35,7 +35,7 @@ Let's use **npx** and **create-next-app** to create a new Next.Js project
 
 
 - Please check the following reference to the Next.Js boiler plate and getting started with framework 
-[Next.Js official documentation](https://nextjs.org/learn/foundations/about-nextjs)
+[Next.Js official documentation](https://nextjs.org/learn/react-foundations)
 
 1. We use the create-next-app npx package to create an application that creates a fully-featured TS package.
 
@@ -100,7 +100,7 @@ of other components.
 
 Components are the basic building blocks of a React application and they allow the developer to split the UI into independent and reusable
 pieces where each piece can be used in isolation. 
-### Creating A Function Component in React
+### Creating a Function Component in React
 
 <a href="https://codesandbox.io/s/nervous-morse-o3pwqm?file=/src/tutorial/CreateFunctionComponent.tsx" target="_blank">view in sandbox</a>
 
@@ -136,7 +136,7 @@ export default App;
 - At last , the component needs to be exported from the current file, so that it can be imported somewhere else and can be used either in isolation or combination with other components for rendering on the UI.
 - Elements on one line can be returned directly.
 - Each instance of a component creates a new element independent of other instances of the component.
-- Each component has it's own state, props, and lifecycle (which will be explored later in the tutorial).
+- Each component has its own state, props, and lifecycle (which will be explored later in the tutorial).
 
 ## Template For Structure of Function Component
 
@@ -174,6 +174,7 @@ React components are similar to JavaScript functions and can accept arbitrary ar
 
 - Create a new file in `src/` directory called `Header.tsx`
 - Create and export a function called Header in the file as below:
+
 ```tsx
 import React from "react";
 
@@ -233,7 +234,7 @@ The above snippet shows creation of counter state with an intial value of 0. Usi
 
 In its most basic form, a State object is a JavaScript object that represents the part of a component that can change as a result of a user's action. States can also be thought of as a component's memory.
 
-State update calls are asynchronous. As one cannot expect to call the update state function on one line and expect the state to be updated on the next. The reason for this is because update state methods are more of a request than an immediate order to update state. So React schedules an update to a component’s state object. When state changes, the component responds by re-rendering. Also multiple update request may be batched into one for performance reasons. 
+State update calls are asynchronous. As one cannot expect to call the update state function on one line and expect the state to be updated on the next. The reason for this is that update state methods are more of a request than an immediate order to update state. So React schedules an update to a component’s state object. When state changes, the component responds by re-rendering. Also multiple update request may be batched into one for performance reasons. 
 
 Changes in state and/or props will both cause our React component to re-render. Changes in state, on the other hand, can only occur internally as a result of components modifying their own state. 
 
@@ -390,7 +391,7 @@ For example, the HTML
 is slightly different in React:
 
 ```html
-<button onclick="{incrementCounter}">Increment Counter</button>
+<button onClick={incrementCounter}>Increment Counter</button>
 ```
 
 -   React provides an equivalent of each event that you might be familiar with from
@@ -414,21 +415,21 @@ function HelloWorld() {
 export default HelloWorld;
 ```
 
-For the list of all the supported events refer https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/forms_and_events/#list-of-event-types
+For the list of all the supported events refer [here](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/forms_and_events/#list-of-event-types)
 
-Please check the list of commom events and instances in which they are used https://react.dev/reference/react-dom/components/common
+Please check the list of common events and instances in which they are used [here](https://react.dev/reference/react-dom/components/common)
 
 ## React Hooks
 
-React hooks are built-in functions which allows us to use state and other lifecycle features. The most basic hooks used by react are useState() which adds a state variable to a react component and useEffect() which is the lifecycle hook for a component. State of component referes to the data it is holding at a particular moment in time.
+React hooks are built-in functions which allows us to use state and other lifecycle features. The most basic hooks used by react are useState() which adds a state variable to a react component and useEffect() which is the lifecycle hook for a component. State of component refers to the data it is holding at a particular moment in time.
 
 ### useState():
 
 <a href="https://codesandbox.io/s/nervous-morse-o3pwqm?file=/src/tutorial/UseStateExample.tsx" target="_blank">view in sandbox</a>
 
-In this section we will see how we can add state to a React Component using the useState() hook provided by React. The useState hook takes the initial value of the state variable as an argument, the initial state can be any type you want (a string, a number, an array, an object) or a function. Only on the first render will the initial value be assigned. Each useState call returns a two-element array. The state variable is the first element of the array, followed by a function to change the variable's value.
+In this section we will see how we can add state to a React Component using the useState() hook provided by React. The useState hook takes the initial value of the state variable as an argument, the initial state can be any type you want (a string, a number, an array, an object or a function). Only on the first render will the initial value be assigned. Each useState call returns a two-element array. The state variable is the first element of the array, followed by a function to change the variable's value.
 
-1. We'll start by defining and initializing state for the number of times the button is clicked, by adding the a state variable as follows:
+1. We'll start by defining and initializing state for the number of times the button is clicked, by adding the state variable as follows:
 
 ```tsx
 import {useState} from 'react';
@@ -528,11 +529,11 @@ Let's break down this code to understand what is happening:
 -   We use React's useEffect function to hook into the component life cycle.
 -   The function takes in an arrow function, which executes when the component is first rendered.
 -   The function takes in a second parameter, which determines when our arrow function is called. This parameter is an array of values that, when changed, will cause the arrow function to be invoked. In our case, we pass in an empty array, so our arrow function will never be called after the first render.
--   If we now try the running app and open the console, we'll see Counter first rendering only appears once.
+-   If we now try the running app and open the console, we'll see that the log within the useEffect only appears once.
 
 3.  Let's remove the second parameter into useEffect now:
 
--   If no second parameter is provided, will cause the arrow function to be invoked first on mount and then on every re-render.
+-   If no second parameter is provided, it will cause the arrow function to be invoked first on mount and then on every re-render.
 
 ```tsx
 useEffect(() => {
@@ -541,7 +542,7 @@ useEffect(() => {
 ```
 
 -   Additionally we can also pass the variable in the array to observe only changes related to a particular value (as below).
--   Now we can see that the componenet will render everytime the value of count is changed.
+-   Now we can see that the component will render everytime the value of count is changed.
 
 ```tsx
 useEffect(() => {
@@ -666,7 +667,7 @@ function Counter() {
 
     function incrementIncrement() {
       // we use the spread operator (...) to make a copy of the object
-        setCounter({...counter, count: counter.increment + 1}); 
+        setCounter({...counter, increment: counter.increment + 1}); 
     }
 
     useEffect(() => {
