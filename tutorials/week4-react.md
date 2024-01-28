@@ -56,6 +56,8 @@ Let's use **npx** and **create-next-app** to create a new Next.Js project
     ```bash
     npm run dev
     ```
+    - Note: Next.Js renders the content within the `app/pages.tsx` file as the root component.
+
 4. Navigate to http://localhost:3000/ to see the default react page.
     - After a few seconds, a browser window opens, with our app running:
       ![image](./assets/week4-react/start.png)
