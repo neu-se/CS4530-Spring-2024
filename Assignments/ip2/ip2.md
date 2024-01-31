@@ -22,9 +22,16 @@ The objectives of this assignment are to:
 ## Getting started with this assignment
 Start by [downloading the starter code]({{site.baseurl}}{% link /Assignments/ip1/ip1-handout.zip %}). Extract the archive and run `npm install` to fetch the dependencies.  **TODO add IP2 handout to GitHub after Thurs 11am**
 
+{: .note }
+**System-level dependencies:** The libraries used for React require some native binaries to be installed -- code written and compiled for your computer (not JavaScript). If you run into issues with `npm install` not succeeding, please try installing the following libraries using either [Homebrew (if on Mac)](https://brew.sh), apt-get, or your favorite other package manager: `pixman`, `cairo`, `pkgconfig` and `pango`. For example, run `brew install pixman cairo pkgconfig pango`. If you are on a newer Mac with an M1 or M2 chip, you may need to use `arch -arm64 brew install pixman cairo pango`. On Windows: Students have reported seeing the failure `error /bin/bash: node: command not found` upon `npm install` in the `frontend` directory. If you encounter this error, please try to delete the `node_modules` directory and re-run `npm install` in the `frontend` directory from a bash shell instead of a windows command prompt.
+
+{: .warning }
+**Node 16 vs 18**
+For this assignment (and the team project), you should use NodeJS **16** and NPM **9**. You can check your version of NodeJS by running `node -v` and your version of NPM by running `npm -v`. We had gotten over-eager at the start of the semester, updating our tutorial on installing a development environment to NodeJS 18. Several of us got stuck in "[dependency hell](https://en.wikipedia.org/wiki/Dependency_hell)" with one of the transitive dependencies of the project, `node-gyp` on various versions of Node 18. All who tested it reported success on Node 16. If you run into failures running `npm install`, and have Node 18, please try downgrading to Node 16 (easiest accomplished using [nvm](https://github.com/nvm-sh/nvm) and the command `nvm install 16` followed optionally by `nvm alias default 16` to make this the default). If you end up changing versions of Node, you will need to delete the `node_modules` directory and run `npm install` again.
+
+
 **Configuring Jest and VSCode**: If you would like to use the built-in Jest test runner for VSCode (where it shows the tests and their status in the sidebar), the easiest way to accomplish this for this project is to open *just* the "frontend" directory or just the "townService" directory in VSCode - not the top-level "ip2-handout" directory. If you have a quick-fix to make it work with the whole project at once, please feel free to share on Piazza and we will incorportate that here.
 
-**NPM install failures**: The libraries used for React require some native binaries to be installed -- code written and compiled for your computer (not JavaScript). If you run into issues with `npm install` not succeeding, please try installing the following libraries using either [Homebrew (if on Mac)](https://brew.sh), apt-get, or your favorite other package manager: `pixman`, `cairo`, `pkgconfig` and `pango`. For example, run `brew install pixman cairo pkgconfig pango`. If you are on a newer Mac with an M1 or M2 chip, you may need to use `arch -arm64 brew install pixman cairo pango`. On Windows: Students have reported seeing the failure `error /bin/bash: node: command not found` upon `npm install` in the `frontend` directory. If you encounter this error, please try to delete the `node_modules` directory and re-run `npm install` in the `frontend` directory from a bash shell instead of a windows command prompt.
 
 **Running the app**: We strongly encourage you to interactively experiment as you develop by running the entire application in your development environment. See the instructions in README.md for how to run the app.
 
@@ -380,17 +387,11 @@ All of the tests are provided in the handout. Run the tests for this task by run
 The grading script will assign full marks for each implementation task if all of the tests for that task pass.  There is no partial credit. 
 
 ## Submission Instructions
-Submit your assignment to the instance of Autograder.io running at [neu.autograder.io](https://neu.autograder.io).
-Navigate to [neu.autograder.io](https://neu.autograder.io) in your web browser, click the "Sign in" button, and log in with your Northeastern account.
-You should then see the course listed on the neu.autograder.io home page.
-Please contact the instructors immediately if you have difficulty accessing the course on Autograder.io.
-If you haven't been added to the course roster yet, you can access the assignment page at [this direct link](https://neu.autograder.io/web/project/12).
+Submit your assignment in GradeScope. The easiest way to get into GradeScope the first time is to first sign into Canvas and then click the link on our course for "GradeScope." You should then also have the option to create an account on GradeScope (if you don’t already have one) so that you can log in to GradeScope directly. Please contact the instructors immediately if you have difficulty accessing the course on GradeScope.
 
-To submit your assignment: run the command `npm run zip` in the top-level directory of the handout. This will produce a file called `covey-town.zip`. Submit that zip file on Autograder.io.
 
-Autograder.io will provide you with feedback on your submission, but note that it will *not* include any marks that will be assigned after we manually grade your submission for code style (these marks will remain hidden until it is graded). It may take several minutes for the grading script to complete.
+To submit your assignment: run the command `npm run zip` in the top-level directory of the handout. This will produce a file called `covey-town.zip`. Submit that zip file on GradeScope.
 
-Autograder.io is configured to only provide feedback on at most 5 submissions per-24-hours per-student (submissions that fail to run or receive a grade of 0 are not counted in that limit). We strongly encourage you to lint and test your submission on your local development machine, and *not* rely on Autograder.io for providing grading feedback - relying on Autograder.io is a very slow feedback loop.
+GradeScope will provide you with feedback on your submission, but note that it will not include any marks that will be assigned after we manually grade your submission for code style (it will show 0 for this until it is graded). It may take several minutes for the grading script to complete.
 
-To check for linter errors, run the command `npm run lint` from the terminal. The handout contains the same eslint configuration that is used by our grading script.
-Submission limit resets at 11am EST.
+GradeScope is configured to only provide feedback on at most 5 submissions per-24-hours per-student (submissions that fail to run or receive a grade of 0 are not counted in that limit). We strongly encourage you to lint and test your submission on your local development machine, and not rely on GradeScope for providing grading feedback - relying on GradeScope is a very slow feedback loop. To check for linter errors, run the command npm run lint from the terminal. The handout contains the same eslint configuration that is used by our grading script.
