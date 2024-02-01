@@ -46,7 +46,7 @@ Given the problem statement, develop three user stories that show how a user wou
 "As a < type of user >, I want < some goal > so that < some reason >."
 My conditions of satisfaction are < list of common cases and special cases that must work >.
 
-Please make sure that your conditions of satification are complete (i.e., cover all common cases) and can be turned into testable behaviors.
+Please make sure that your conditions of satisfaction are complete (i.e., cover all common cases) and can be turned into testable behaviors.
 
 **EACH CONDITION OF SATISFACTION MUST HAVE A PRIORITY (Essential, Desirable, or Optional)**.  The set of Essential items will constitute the "Minimum Viable Product". Each user story should include one or more essential and desirable conditions of satisfaction.
 
@@ -61,7 +61,7 @@ A work breakdown includes all of the tasks necessary to accomplish the project, 
 Consider all of the kinds of tasks that your team will need to perform, including knowledge acquisition, design, implementation, testing and documentation tasks.
 It is hard to say (generically) how many work items are necessary.
 
-Each task on the work breakdown should be assigned to exactly one team member (as primary responsbile party), who should provide a "T-Shirt" estimate for how long it will take (along with a justification for that estimate).
+Each task on the work breakdown should be assigned to exactly one team member (as primary responsible party), who should provide a "T-Shirt" estimate for how long it will take (along with a justification for that estimate).
 Consider the dependencies between tests: perhaps an API needs to be designed and specified before implementation can begin; perhaps your development environment needs to be configured before anything else can proceed.
 Assign tasks to sprints considering these dependencies.
 
@@ -69,7 +69,7 @@ Given the preliminary nature of your project, we do not expect that you will kno
 
 In keeping with the agile philosophy, you should plan on spending the first two weeks of the project (from January 31 until February 14) in a "Sprint -1" in which you will undertake organizational and research tasks to help you improve your project plan (due on February 14).
 
-For example: Consider if you were proposing the "Viewing Area" project (the individual project), without the experience of having completed it. It might be difficult to consider how to break down a task like "Implement the frontend components for sychnronized video playback" into something that you could commit to doing within a day or two. Given that this is a task that can be delayed until the end of the project (no other tasks depend on it), it would be wise to consider having some tasks early on in the project, such as: "Find react components that embed YouTube videos," and "Implement simple video player that does not synchronize playback." Completing these smaller tasks early would let you both demonstrate that some forward progress is being made, and also allow you to create a much more responsible estimate for how that last, otherwise insurmountably large task would take.
+For example: Consider if you were proposing the "Viewing Area" project (the individual project), without the experience of having completed it. It might be difficult to consider how to break down a task like "Implement the frontend components for synchronized video playback" into something that you could commit to doing within a day or two. Given that this is a task that can be delayed until the end of the project (no other tasks depend on it), it would be wise to consider having some tasks early on in the project, such as: "Find react components that embed YouTube videos," and "Implement simple video player that does not synchronize playback." Completing these smaller tasks early would let you both demonstrate that some forward progress is being made, and also allow you to create a much more responsible estimate for how that last, otherwise insurmountably large task would take.
 
 **Do not wait for your TA feedback to begin this work.** You probably know more about the details of your project then they do. It will be helpful for all concerned if your Project Plan lists the major unknowns or things that you expect to need help with-- this will help the TA provide more useful feedback for you
 
@@ -144,7 +144,7 @@ Receive full marks if each element on the work breakdown:
 * Has a size estimate (small, medium, or large) that is provided by the team member assigned the task.
 * Has a responsible justification for that estimation
 * Every "large" task:
-  * Is accompanied by a reasonable explanation of why the team is unnable to provide a responsible estimate
+  * Is accompanied by a reasonable explanation of why the team is unable to provide a responsible estimate
   * Is accompanied by at least one small or medium task, scheduled well-before the "large" task is due to be completed. We would expect that most of these research tasks are scheduled to sprint 0, or perhaps sprint 1.
 
 #### Scheduling of tasks (10 points):
