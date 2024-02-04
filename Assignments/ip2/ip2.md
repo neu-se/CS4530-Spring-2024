@@ -81,6 +81,12 @@ The base class tracks the game model (`this._model`), the set of players in the 
 
 Your first task is to implement each of the properties and methods of the `ConnectFourAreaController` class (`frontend/src/classes/interactable/ConnectFourAreaController.ts`). The specification for these properties and methods appears below:
 
+
+{: .note }
+**GitHub Co-pilot:** If you haven't yet used GitHub Copilot, this might be a good time to set it up. It can be very helpful for writing boilerplate code, and especially for proposing implementations of very simple methods. You likely will find it very useful for many of these implementation tasks. To get it for free: 1. Sign up for [GitHub's Student Pack](https://education.github.com/pack) and wait for your student status to be verified, then 2. Install the [GitHub Copilot extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) for VSCode.
+
+{: .note }
+
 {::options parse_block_html="true" /}
 <details><summary markdown="span">View the specification for these methods</summary>
 {% highlight typescript %}
@@ -306,7 +312,7 @@ This task is to implement the `ConnectFourBoard` component, which will render th
 
 <details><summary markdown="span">View the specification for this component</summary>
 {% highlight typescript %}
-/**
+*
  * A component that renders the ConnectFour board
  *
  * Renders the ConnectFour board as a "StyledConnectFourBoard", which consists of "StyledConnectFourSquare"s
@@ -314,6 +320,9 @@ This task is to implement the `ConnectFourBoard` component, which will render th
  *
  * Each StyledConnectFourSquare has an aria-label property that describes the cell's position in the board,
  * formatted as `Cell ${rowIndex},${colIndex} (Red|Yellow|Empty)`.
+ *
+ * The background color of each StyledConnectFourSquare is determined by the value of the cell in the board, either
+ * 'red', 'yellow', or '' (an empty for an empty square).
  *
  * The board is re-rendered whenever the board changes, and each cell is re-rendered whenever the value
  * of that cell changes.
@@ -325,7 +334,7 @@ This task is to implement the `ConnectFourBoard` component, which will render th
  *
  * @param gameAreaController the controller for the ConnectFour game
  */
-export default function ConnectFourBoard({
+ export default function ConnectFourBoard({
   gameAreaController,
 }: ConnectFourGameProps): JSX.Element
 {% endhighlight %}
@@ -347,7 +356,7 @@ On the right hand side of the Covey.Town interface, there is a sidebar that disp
 
 Given the growth of the Covey.Town codebase, Avery has decided that instead of just listing the active Conversation Areas, it would be better to list all of the active interactables in the town. This will allow the sidebar to list the active Conversation Areas, as well as any active games, viewing areas, or future interactable areas not yet conceived.
 
-Your specific task is to implement the `InteractableAreaList` component, which will display a list of all active interactable areas in the town. This component is located in the file `frontend/src/components/SocialSidebar/InteractableAreaList.tsx`. This component should make use of two React hooks defined in `InteractableController.ts` - `useInteractableAreaOccupants` and `useInteractableAreaFriendlyName`. These hooks are responsible for fetching the list of occupants of an interactable area, and the friendly name of the interactable area, respectively. You will need to implement the `useInteractableAreaFriendlyName` hook, but will find the other is already completed.
+Your specific task is to implement the `InteractableAreaList` component, which will display a list of all active interactable areas in the town. This component is located in the file `frontend/src/components/SocialSidebar/InteractableAreaList.tsx`. This component should make use of two React hooks defined in `InteractableAreaController.ts` - `useInteractableAreaOccupants` and `useInteractableAreaFriendlyName`. These hooks are responsible for fetching the list of occupants of an interactable area, and the friendly name of the interactable area, respectively. You will need to implement the `useInteractableAreaFriendlyName` hook, but will find the other is already completed.
 
 You might find it useful to view the code of the [old ConversationAreasList component](https://github.com/neu-se/covey.town/blob/cf69be63f2d43ec3327dfab04a8a045c642dc741/frontend/src/components/SocialSidebar/ConversationAreasList.tsx).
 
@@ -357,12 +366,14 @@ You might find it useful to view the code of the [old ConversationAreasList comp
 /**
  * A react component that displays a list of all active interactable areas in the town.
  * The list is grouped by type of interactable area, with those groups sorted alphabetically
- * by the type name. Within each group, the areas are sorted first by the number of occupants
- * in the area, and then by the name of the area (alphanumerically).
+ * by the type name. If there are any active areas of that type, the type name is shown in an H3,
+ * followed by an ordered list of interactable areas of that type. Within each type, the areas
+ * are sorted first by the number of occupants in the area, and then by the name of the area
+ * (alphanumerically).
  *
  * The list of interactable areas is represented as an ordered list, with each list item
  * containing the name of the area (in an H4 heading), and then a list of the occupants of the area, where
- * each occupant is shown as a PlayerName component.
+ * each occupant is shown as a PlayerName component. The list of occupants is in an unordered list.
  *
  * @returns A list of all active interactable areas in the town as per above spec
  */
