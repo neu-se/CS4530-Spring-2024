@@ -20,7 +20,7 @@ The objectives of this assignment are to:
 
 
 ## Getting started with this assignment
-Start by [downloading the starter code]({{site.baseurl}}{% link /Assignments/ip1/ip1-handout.zip %}). Extract the archive and run `npm install` to fetch the dependencies.  **TODO add IP2 handout to GitHub after Thurs 11am**
+Start by [downloading the starter code]({{site.baseurl}}{% link /Assignments/ip2/ip2-handout.zip %}). Extract the archive and run `npm install` to fetch the dependencies.  
 
 {: .note }
 **System-level dependencies:** The libraries used for React require some native binaries to be installed -- code written and compiled for your computer (not JavaScript). If you run into issues with `npm install` not succeeding, please try installing the following libraries using either [Homebrew (if on Mac)](https://brew.sh), apt-get, or your favorite other package manager: `pixman`, `cairo`, `pkgconfig` and `pango`. For example, run `brew install pixman cairo pkgconfig pango`. If you are on a newer Mac with an M1 or M2 chip, you may need to use `arch -arm64 brew install pixman cairo pango`. On Windows: Students have reported seeing the failure `error /bin/bash: node: command not found` upon `npm install` in the `frontend` directory. If you encounter this error, please try to delete the `node_modules` directory and re-run `npm install` in the `frontend` directory from a bash shell instead of a windows command prompt.
