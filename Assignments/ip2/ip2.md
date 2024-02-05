@@ -64,12 +64,11 @@ We will review your code and note each violation of this rubric. We will deduct 
 This deliverable has four parts; each part will be graded on its own rubric. You should complete the assignment one part at a time, in the order presented here.
 
 **General Requirements**: Implement your code *only* in the files specified:
-**TODO** - update this list
-* Task 1: `frontend/src/classes/interactable/TicTacToeAreaController.ts`
-* Task 1: `frontend/src/classes/interactable/TicTacToeAreaController.test.ts`
-* Task 2: `frontend/src/components/Town/interactables/TicTacToe/TicTacToeArea.tsx`
-* Task 3: `frontend/src/components/Town/interactables/TicTacToe/TicTacToeBoard.tsx`
-* Task 4: `frontend/src/components/Town/interactables/Leaderboard.tsx`
+* Task 1: `frontend/src/classes/interactable/ConnectFourAreaController.ts.ts`
+* Task 2: `frontend/src/components/Town/interactables/GamesArea.tsx`
+* Task 3: `frontend/src/components/Town/interactables/ConnectFour/ConnectFourArea.tsx`
+* Task 4: `frontend/src/components/Town/ConnectFour/ConnectFourBoard.tsx`
+* Task 5: `frontend/src/components/SocialSidebar/InteractableAreaList.tsx` and `frontend/src/classes/interactable/InteractableAreaController.ts`
 
 You should not install any additional dependencies. The autograder will ignore any other files that you modify, and will not install any dependencies that you add to the project.
 
@@ -243,7 +242,7 @@ Grading:
 ### Task 3: Connect Four Area (50 points total)
 The next task is to implement the React component that will render the Connect Four game area. This component will show information about the game area, and the current state of the game. It displays the `ConnectFourBoard`` (which you'll implement in the next task).
 
-This component is located in the file `frontend/src/components/Town/interactables/TicTacToe/TicTacToeArea.tsx` - you should implement component class in this file.
+This component is located in the file `frontend/src/components/Town/interactables/ConnectFour/ConnectFourArea.tsx` - you should implement component class in this file.
 
 <details><summary markdown="span">View the specification for this component</summary>
 {% highlight typescript %}
