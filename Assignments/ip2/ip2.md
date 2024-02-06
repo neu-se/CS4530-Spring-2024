@@ -18,6 +18,8 @@ The objectives of this assignment are to:
 * Write test cases that utilize mocks and spies
 * Write React components and hooks that make use of state
 
+## Changelog
+* Feb 6: Fixed typo in the list of files in "General Requirements" (`ConnectFourAreaController.ts.ts` -> `ConnectFourAreaController.ts`)
 
 ## Getting started with this assignment
 Start by [downloading the starter code]({{site.baseurl}}{% link /Assignments/ip2/ip2-handout.zip %}). Extract the archive and run `npm install` to fetch the dependencies.  
@@ -64,7 +66,7 @@ We will review your code and note each violation of this rubric. We will deduct 
 This deliverable has four parts; each part will be graded on its own rubric. You should complete the assignment one part at a time, in the order presented here.
 
 **General Requirements**: Implement your code *only* in the files specified:
-* Task 1: `frontend/src/classes/interactable/ConnectFourAreaController.ts.ts`
+* Task 1: `frontend/src/classes/interactable/ConnectFourAreaController.ts`
 * Task 2: `frontend/src/components/Town/interactables/GamesArea.tsx`
 * Task 3: `frontend/src/components/Town/interactables/ConnectFour/ConnectFourArea.tsx`
 * Task 4: `frontend/src/components/Town/ConnectFour/ConnectFourBoard.tsx`
