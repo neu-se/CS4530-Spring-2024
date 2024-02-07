@@ -30,7 +30,7 @@
   page: /modules/9-patterns-of-react
 5b:
   name: Distributed System Architectures (Part 1)
-  page: 
+  page: /modules/10-ds-1
 6a:
   name: Distributed System Architectures (Part 2)
   page: 
@@ -88,7 +88,7 @@ ip1:
 ip2:
   name: Individual Project Deliverable 2 
   type: deadline
-  page: 
+  page: /assignments/ip2 
 tp1:
   name: Project Formation
   type: deadline
