@@ -19,6 +19,7 @@ The objectives of this assignment are to:
 * Write React components and hooks that make use of state
 
 ## Changelog
+* Feb 7: Updated handout to fix typo in ConnectFourArea.test.tsx. Line 627 should read `expect(screen.getByText('Waiting for players to press start', { exact: false })).toBeInTheDocument();` 
 * Feb 6: Fixed typo in the list of files in "General Requirements" (`ConnectFourAreaController.ts.ts` -> `ConnectFourAreaController.ts`)
 
 ## Getting started with this assignment
