@@ -20,7 +20,7 @@ The objectives of this assignment are to:
 
 ## Changelog
 * Feb 11: Fixed the mock initializer in `GamesArea.test.tsx` - this was causing some student submissions to fail with an error about the incorrect `interactableID` being found. The handout is updated with the test, and it can also be directly downloaded from [here]({{site.baseurl}}{% link /Assignments/ip2/GamesArea.test.tsx %}). 
-* Feb 8: :facepalm: If you had the pre-Feb-7 handout, note that Lines 627 *and* 709 should read `expect(screen.getByText('Waiting for players to press start', { exact: false })).toBeInTheDocument();`
+* Feb 8: 🤦 If you had the pre-Feb-7 handout, note that Lines 627 *and* 709 should read `expect(screen.getByText('Waiting for players to press start', { exact: false })).toBeInTheDocument();`
 * Feb 7: Updated handout to fix typo in ConnectFourArea.test.tsx. Line 627 should read `expect(screen.getByText('Waiting for players to press start', { exact: false })).toBeInTheDocument();` 
 * Feb 6: Fixed typo in the list of files in "General Requirements" (`ConnectFourAreaController.ts.ts` -> `ConnectFourAreaController.ts`)
 
