@@ -83,7 +83,7 @@ Your work breakdown may take the format of a simple textual list.
 
 ## Submission 
 Your revised project plan should be submitted as a single PDF on Canvas under the assignment "Revised Project Plan."
-Each team submits a single document.
+Each team submits a single document. Make sure that your team number is added to the title of the document.
 This assignment is due Feb 28 at 11am. 
 
 ## Grading
