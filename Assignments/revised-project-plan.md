@@ -23,7 +23,7 @@ Given the problem statement, develop three user stories that show how a user wou
 "As a < type of user >, I want < some goal > so that < some reason >."
 My conditions of satisfaction are < list of common cases and special cases that must work >. Please make sure that your conditions of satification are complete (i.e., cover all common cases) and can be turned into testable behaviors.
 
-**EACH USER STORY MUST HAVE ONE OR MORE ESSENTIAL AND DESIRABLE CONDITIONS OF SATISFACTION**.  The set of essential items will constitute the "Minimum Viable Product". **EACH CONDITION OF SATISFACTION MUST HAVE A PRIORITY (Essential, Desirable, or Optional).**
+**EACH USER STORY MUST HAVE ONE OR MORE ESSENTIAL AND DESIRABLE CONDITION(S) OF SATISFACTION**.  The set of essential items will constitute the "Minimum Viable Product". **EACH CONDITION OF SATISFACTION MUST HAVE A PRIORITY (Essential, Desirable, or Optional).**
 
 You should include three different user stories to describe how users will interact with your feature.
 Your three user stories should cover the key behavior that your feature will provide.
@@ -45,14 +45,14 @@ Assign tasks to sprints considering these dependencies.
 
 Given the preliminary nature of your project, we do not expect that you will know all of the details about precisely how to implement your feature such that you could break it down into tasks that you feel could be implemented in a day or two. Large tasks (those which you can not provide a responsible estimate for) must be accompanied by smaller “research” tasks that can be performed early on in the project. You may wish to provide deadlines by which the task must either be refined into smaller tasks (based on new knowledge gathered), or reworked/abandoned.
 
-In keeping with the agile philosophy, you should plan on spending the first two weeks of the project (from September 27 until October 11) in a "Sprint -1" in which you will undertake organizational and research tasks to help you improve your project plan (due on October 11).
+In keeping with the agile philosophy, you should plan on spending these two weeks of the project (from February 14 until February 28) in a "Sprint 0" in which you will undertake tasks you previously planned including those that help you improve your project plan.
 
 For example: Consider if you were proposing the "Viewing Area" project (the individual project), without the experience of having completed it. It might be difficult to consider how to break down a task like "Implement the frontend components for sychnronized video playback" into something that you could commit to doing within a day or two. Given that this is a task that can be delayed until the end of the project (no other tasks depend on it), it would be wise to consider having some tasks early on in the project, such as: "Find react components that embed YouTube videos," and "Implement simple video player that does not synchronize playback." Completing these smaller tasks early would let you both demonstrate that some forward progress is being made, and also allow you to create a much more responsible estimate for how that last, otherwise insurmountably large task would take.
 
 **Do not wait for your TA feedback to begin this work.** You probably know more about the details of your project then they do. It will be helpful for all concerned if your Project Plan lists the major unknowns or things that you expect to need help with-- this will help the TA provide more useful feedback for you
 
 Be realistic, and leave time for contingencies (including the time around the midterm exam on Nov 1-3).
-Remember that you will need to have a demo prepared of your feature by 11/29 - just 5 weeks from the due date of this assignment.
+Remember that you will need to have a demo prepared of your feature by April 10th - just 5 weeks from the due date of this assignment (not counting spring break).
 
 If you are uncertain that some tasks will be feasible, then be sure to include evaluation tasks earlier-on in the project that will allow for "go/no-go" decisions to move forward on a task or drop it.
 
@@ -79,7 +79,7 @@ Your work breakdown may take the format of a simple textual list.
 
 **Mandatory update for all teams:** Even if your work breakdown is entirely unchanged compared to the preliminary plan, please be certain to include updates on all "sprint 0" tasks (those which were scheduled to be completed before the due date of this revised plan). Many teams included research/learning tasks in the first week to help inform the rest of the work breakdown: you should be certain to revise your work breakdown based on what you have learned so far.
 
-**Please note that in order to receive full credit for the final delivered product, each team is expected to deliver Minimum Viable Product (marked as essential) and additional features proposed in the project plan (marked as desirables). Please plan your work accordingly.**
+**Please note that in order to receive full credit for the final delivered product, each team is expected to deliver Minimum Viable Product (marked as essential) as well as additional features proposed in the project plan (marked as desirables). Please plan your work accordingly.**
 
 ## Submission 
 Your revised project plan should be submitted as a single PDF on Canvas under the assignment "Revised Project Plan."
