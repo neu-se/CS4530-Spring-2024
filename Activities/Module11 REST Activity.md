@@ -7,6 +7,8 @@ nav_exclude: true
 
 In this activity, you will use TSOA to build a REST client for our transcript database.
 
+Requirement: node -version = @16 0r @17
+
 As usual, download the [starter code]({{ site.baseurl }}{% link Activities/module11-rest-transcript-activity.zip %}) and run `npm install`.
 
 Then, run `npm start` to generate the OpenAPI specification, server boilerplate, and start the development server.
