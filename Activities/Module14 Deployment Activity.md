@@ -19,8 +19,9 @@ We have carefully crafted this activity around services that provide free trials
 ### Creating a GitHub Repository
 Your team's development must take place within a private GitHub repository in our GitHub Classroom. To create your repository, each member of your team should follow these instructions:
 1. Sign in to [GitHub.com](https://www.github.com/), and then [use our invitation to create a repository with the covey.town codebase (Link to be shared 11am Monday 2/26)](https://classroom.github.com/a/TBD). You will need to click the "authorize" button next to `neu-cs4530` and go through the NEU single sign on. Then you will see a list of groups. Check to see if one of your groupmates has created a group already - if so, select it to join it. Otherwise, create a team with the exact naming scheme "Group XYY", where X is your section number and YY is your group number. 
-2. Refresh the page, and after a moment you should see a confirmation with a link to your repository, e.g. `https://github.com/neu-cs4530/spring24-project-team-999`. This is the repository you will use for the project. Navigate to the repository in your browser by clicking on the repository URL.
-3. Clone the repository to your computer. Each of your team members should also clone the repository to their computer.
+2. Wait for an email to arrive from GitHub, inviting you to join the repository. This email will be sent to the email address that you used to sign up for GitHub. Click the link to join the repository.
+3. The repository should now be created.
+4. Clone the repository to your computer. Each of your team members should also follow these steps to join your group and clone the repository to their computer.
 
 This repository will be private, and visible only to your team and the course staff. After the semester ends, you are welcome to make it public - you have complete administrative control of the repository. 
 
@@ -38,7 +39,7 @@ If you have not configured a Twilio account yet, follow these instructions to se
 2. Create an API Key: Select the "Account" menu from the top toolbar, and then select "API keys & tokens". If prompted, re-enter your password.
 3. Click "Create API key", the big blue button at the top right. Enter any descriptive name that you would like for the "friendly name", and use the other default settings (US region, "standard" key type). Save the "SID" (this will be referenced later as the `TWILIO_API_KEY_SID`) and the "Secret" (this will be referenced later as the `TWILIO_API_KEY_SECRET`). Once you are sure that you have copy/pasted these for safe keeping, tick the "Got it!..." checkbox and click "Done".
 4. You should now be back to the "API keys & tokens" page. Take note of the "Live Credentials" in the box lower on this page. The "Account SID" and "Auth token" will be necessary for step 5.
-5. Create a `.env` file in the `services/townService` directory, setting the values as follows:
+5. Create a `.env` file in the `townService` directory, setting the values as follows:
 
 | Config Value            | Description                               |
 | ----------------------- | ----------------------------------------- |
