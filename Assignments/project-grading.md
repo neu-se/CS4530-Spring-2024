@@ -42,17 +42,17 @@ We will grade each of these using the following rubric:
 
 #### Satisfactory:
 * Implemented feature satisfies the conditions of satisfaction as proposed by the team and as agreed to by the course staff. If technical difficulties resulted in features being dropped, the project may still earn full marks on "delivered features," but these difficulties must have been documented with the course staff as you encountered them during development.
-* Implemented feature is deployed to a publicly-accessible URL, using Netlify and Heroku and/or Render.com for hosting (or as per deployement instructions provided).
+* Implemented feature is deployed to a publicly-accessible URL, using Heroku and/or Render.com for hosting (or as per deployement instructions provided).
 * Implemented feature contains no ESLint warnings or errors; does not include any eslint-disable or ts-ignore flags
 
 #### Meets minimum requirements:
 * Implemented feature largely satisfies acceptance criteria as proposed by the team, but may not meet the course staff’s interpretation of those criteria.
-* Implemented feature is deployed to a publicly-accessible URL, using Netlify and Heroku /Render for hosting (or as per deployement instructions provided).
+* Implemented feature is deployed to a publicly-accessible URL, using Heroku and/or Render.com for hosting (or as per deployement instructions provided).
 * The implementation may have some obvious flaws, but largely works without crashing.
 * Implemented feature does not include any eslint-disable or ts-ignore flag
 
 ### Testing (10%)
-The project must include evidence of testing. Ideally, all new features will be accompanied by fully automated tests, but in some circumstances (particularly when engaging with Phaser, the game library, or Tiled, the map editor), this may not be feasible. If automated tests are not possible, include a discussion of your manual testing strategy, including a script that a future developer could use to manually test the feature.
+The project must include evidence of testing. Ideally, all new features will be accompanied by fully automated tests, but in some circumstances (particularly when engaging with Phaser, the game library, or Tiled, the map editor), this may not be feasible. If automated tests are not possible, include a discussion of your manual testing strategy, including a script that a future developer could use to manually test the feature. There is no explicit requirement to make use of any specific testing technology (e.g. mocks, spies, etc.).
 
 #### Satisfactory:
 * Any new or modified backend features include tests that validate that the feature works as intended. These tests cover the changed code, and also contain well-written assertions that thoroughly check the expected behaviors.
@@ -70,7 +70,7 @@ These items will be evaluated using the rubrics below.
 
 #### Satisfactory:
 * There is a clear development history visible from the git repository: features were delivered incrementally, and not in a single (or several) commits at the end of the project
-* There is evidence of code review - for example, pull requests that have comments on them. Teams are expected to merge their developvemeent branches to main only after code review. 
+* There is evidence of code review - for example, pull requests that have comments on them. Teams are expected to merge their development branches to main only after code review. 
 * There is a correspondence between commit messages and the technical tasks that they are associated with; there are few (if any) commits with meaningless commits messages like `.` or `Add files via upload`.
 * Each team member has made at least 4 commits over the lifespan of the project
 * The team meets regularly with the TA mentor.  All or most members attend all meetings. Members who are absent from a TA Meeting send an excuse in advance.
@@ -134,16 +134,14 @@ The allocation of the 10% credit will be as follows: Overview and manual will be
 * The document is at most 2 pages (fewer pages are absolutely acceptable, consider this a rough limit) 
 
 ### Posters and Demo (10%)
-Each team will be required to submit a poster. In addition, some sections may have a demo (live in-person, via zoom or by recorded video). Each instructor will provide details regarding expectations for the demo and/or presentation. The schedule and manner of these demos might also vary from section to section.  The specifications for the different sections are listed below:
-* [Sections 2, 4, 7 - Prof. Bhutta](https://neu-se.github.io/CS4530-Fall-2023/assignments/sec-247-demos)
-* [Section 6 - Prof. Wand](https://neu-se.github.io/CS4530-Fall-2023/assignments/sec-6-demos)
+Each team will be required to submit a poster. In addition, some sections may have a demo (live in-person, via zoom or by recorded video). Each instructor will provide details regarding expectations for the demo and/or presentation. The schedule and manner of these demos might also vary from section to section.  The specifications for the different sections will be posted in the coming weeks.
 
-Select projects may be hosted in our project showcase. Here are selected projects from Fall 2022 [project showcase](https://neu-se.github.io/CS4530-Fall-2022/assignments/project-showcase).
+Select projects may be hosted in our project showcase. Here are selected projects from the [Fall 2022 project showcase](https://neu-se.github.io/CS4530-Fall-2022/assignments/project-showcase) and [Fall 2023 project showcase](https://neu-se.github.io/CS4530-Fall-2023/assignments/project-showcase). Posters will only be included in the showcase with the team's permission.
 
 ## Individual Reflection
 
 Accompanying the final team deliverable will be an individual reflection, which every student must submit on their own.
-Satisfactory completion of all parts of this reflection is required to receive an "A" grade in the course, and may be used to calibrate project scores across multiple team members.
+Satisfactory completion of all parts of this reflection is required to receive an "A" grade in the course, and may be used to calibrate project scores across multiple team members. 
 The individual reflection also provides an opportunity for students to provide confidential feedback on the performance of their teammates.
 
 ### Project Concept
