@@ -64,7 +64,7 @@ The project must include evidence of testing. Ideally, all new features will be 
 
 ### Process (20%)
 The Process grade includes: use of a structured development process, including code reviews, timely completion of sprint progress reports/retrospectives, individual/team surveys, peer evaluations and weekly meetings with TA Mentor (for Week 6, 8, 10-13). It also includes appropriate division of labor within the project. For full credit, each member of the team must have at least 4 commits in the final delivered code. 
-* Ongoing development progress including code reviews, github commits, etc. count 10% of the grade
+* Ongoing development progress including code reviews, github commits, issue tracker activity, etc. count 10% of the grade
 * Peer evaluations, TA meeting, submission of surveys/reports counts 10% of the project grade. 
 These items will be evaluated using the rubrics below. 
 
@@ -127,6 +127,7 @@ The allocation of the 10% credit will be as follows: Overview and manual will be
 #### Satisfactory:
 * Process overview contains a detailed description of the manner in which agile project management processes were used during the project (i.e., sprints, sprint reviews, retrospectives and blameless reviews).
 * It provides a summary of what was planned to happen in each sprint vs what actually happened, with a discussion of what was revised as a result. 
+* It provides a short list of best practices for the project that you would suggest to future teams.
 * The document is at most 2 pages (fewer pages are absolutely acceptable, consider this a rough limit) 
 
 #### Meets minimum requirements:
