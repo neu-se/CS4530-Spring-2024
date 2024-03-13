@@ -117,11 +117,13 @@ The allocation of the 10% credit will be as follows: Overview and manual will be
 * Technical Overview contains a description of any substantive changes to the existing Covey.Town codebase, and of the architecture of your new code.
 * When appropriate, it uses diagrams and/or figures to illustrate a design (there is no requirement to use a specific tool or format for this - students often use lucidchart, draw.io, [mermaid](https://mermaid.live) or even hand-drawn diagrams).
 * It provides a well-reasoned rationale for why this is the "right" design. 
-* The document is at most 2 pages (fewer pages are absolutely acceptable, consider this a rough limit) 
+* It provides a table showing the status of all proposed user stories and conditions of satisfaction (proposed vs completed). The status could be fully implemented, partially implementted (feel free to add percentages), not completed.
+* The document is at most 2 pages (fewer pages are absolutely acceptable, consider this a rough limit) excluding the table. 
 
 #### Meets minimum requirements:
 * Technical Overview includes a description of all major changes to the code compared to our existing Covey.Town codebase.
-* The document is at most 2 pages (fewer pages are absolutely acceptable, consider this a rough limit) 
+* It provides a table showing the status of all proposed user stories and conditions of satisfaction (proposed vs completed). The status could be fully implemented, partially implementted (feel free to add percentages), not completed.
+* The document is at most 2 pages (fewer pages are absolutely acceptable, consider this a rough limit) excluding the table.
 
 ### * Process Overview
 #### Satisfactory:
