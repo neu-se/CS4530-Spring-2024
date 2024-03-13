@@ -14,7 +14,7 @@ Your final team deliverable will be a "release" of your new feature on GitHub (w
 ### Contents
 
 Your final team deliverable will include:
-* The implementation of your new feature, deployed to Netlify + Heroku / Render.com
+* The implementation of your new feature, deployed to Heroku / Render.com
 * Automated tests for your new feature
 * A report that describes how to use your new feature and what was completed vs proposed
 * A poster and/or demo
@@ -25,7 +25,7 @@ Accompanying the final team deliverable will be an *individual reflection*, whic
 ### Submission Instructions
 
 #### Code, documentation and Link
- All apps will be deployed on Heroku / Render (instructions for CI/CD pipeline setup are provided separately). After you have pushed all of your code (and documentation) to your team's GitHub repository, create [a release](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/managing-releases-in-a-repository) on GitHub, and apply the tag version `final-submission`. After your release is created, you'll find that there is now a `.zip` that can be downloaded from GitHub that contains a snapshot of your entire repository. Download this zip file, unpack it, and follow the instructions that you provided in your README to double-check that the course staff will be able to run your project (this step is handy to make sure that you didn't forget to include some key files in git). If needed, you can delete the release, make some changes, and re-release up until the deadline. **Submit this zip file to Canvas** under the assignment "Project: Code Submission" along with the link of your hosted app (in comments or a text file). Submit your report separately to Canvas, under the assignment "Project: Report".
+ All apps will be deployed on Heroku / Render (instructions for CI/CD pipeline setup are provided separately). After you have pushed all of your code (and documentation) to your team's GitHub repository, create [a release](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/managing-releases-in-a-repository) on GitHub, and apply the tag version `final-submission`. After your release is created, you'll find that there is now a `.zip` that can be downloaded from GitHub that contains a snapshot of your entire repository. Download this zip file, unpack it, and follow the instructions that you provided in your README to double-check that the course staff will be able to run your project (this step is handy to make sure that you didn't forget to include some key files in git). If needed, you can delete the release, make some changes, and re-release up until the deadline. **Submit this zip file to Canvas** under the assignment "Project: Code Submission" along with **the link of your hosted app** (in comments or a text file). Submit your report separately to Canvas, under the assignment "Project: Report".
 
 #### Project Poster & Demo
 Each team will submit a poster. Your poster will be a single-page document, that will include the following aspects:

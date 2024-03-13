@@ -3,7 +3,7 @@ layout: page
 title: Final Project Grading
 permalink: /assignments/project-grading
 parent: Assignments
-nav_order: 6
+nav_order: 7
 ---
 # Grading
 Each project will be graded by the team's assigned TA mentor and the instructor. For most of the submission components below, we provide two benchmark rubrics: one for a submission that is satisfactory (full marks), and one that would be meeting our minimum expectations (a pass). In practice, when grading projects we will usually assign numeric grades and provide partial credit, using these rubrics as guidelines for those two extremes. A rubric for the remaining components will be provided by individual instructors. 
@@ -91,7 +91,7 @@ The final report should consist of three sections:
 * Technical Overview
 * Process Overview
 
-The allocation of the 10% credit will be as follows: Overview and manual will be worth 4%, technical and process overviews will be worth 3% each.
+The allocation of the 10% credit will be as follows: Overview and manual will be worth 3%, technical and process overviews will be worth 4% and 3% respectively.
 
 ### * Feature Overview and User Manual
 
