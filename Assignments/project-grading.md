@@ -138,9 +138,9 @@ The allocation of the 10% credit will be as follows: Overview and manual will be
 
 ### Posters and Demo (10%)
 Each team will be required to submit a poster. In addition, some sections may have a demo (live in-person, via zoom or by recorded video). Each instructor will provide details regarding expectations for the demo and/or presentation. The schedule and manner of these demos might also vary from section to section. The specifications for the different sections are listed below:
-* [Section 1 - Prof. Bell](https://neu-se.github.io/CS4530-Spring-2024/assignments/sec-1-demos)
-* [Sections 2, 3, 5 - Prof. Bhutta](https://neu-se.github.io/CS4530-Spring-2024/assignments/sec-235-demos)
-* [Section 4 - Prof. Wand](https://neu-se.github.io/CS4530-Spring-2024/assignments/sec-4-demos)
+* [Section 1 - Prof. Bell]({{ site.baseurl }}{% link Assignments/demo-sec1.md %})
+* [Sections 2, 3, 5 - Prof. Bhutta]({{ site.baseurl }}{% link Assignments/demo-sec235.md %})
+* [Section 4 - Prof. Wand]({{ site.baseurl }}{% link Assignments/demo-sec4.md %})
 
 Select projects may be hosted in our project showcase. Here are selected projects from the [Fall 2022 project showcase](https://neu-se.github.io/CS4530-Fall-2022/assignments/project-showcase) and [Fall 2023 project showcase](https://neu-se.github.io/CS4530-Fall-2023/assignments/project-showcase). Posters will only be included in the showcase with the team's permission.
 
