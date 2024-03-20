@@ -8,7 +8,6 @@ nav_order: 9
 
 # Specifications for Live Presentations (Sec 1, Prof. Bell)
 
-There is no required presentation for our section. Each group has the option to submit an optional 10 minute video demo and you can also choose to present your poster during class.
+There is no required presentation for our section. On Thursday April 11, we will have a demo day, where you can show off your project to the class. We will also collect all of the posters and put them up in one place, so that every student can see each others' demo and poster. We will conclude the session with a post-mortem of the entire course.
 
-## Grading Rubric:
-TBA
+Students will *optionally* be able to present their poster and demo to the class. However, this is not required, and will not be graded.
