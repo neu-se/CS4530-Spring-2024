@@ -8,16 +8,20 @@ nav_order: 8
 
 # Specifications for Live Demos / Presentations (Sections 2, 3, & 5 - Prof. Bhutta)
 
-Each group will present a live demo to show the feature that they have added to Covey.Town for the final project (the demo MUST be from hosted website, NOT from localhost). The schedule of these demos will be discussed/finalized during the lecture. You will have 9 minutes maximum (8 minutes to setup and present. 1 minute for questions and everything else). You will lose points if your demo goes over 8 minutes. Please rehearse it and time yourself (best to keep it to 7 minutes or less). Attendance is REQUIRED for these demos.
+Each group will present a live demo to show the feature that they have added to Covey.Town for the final project. The schedule of these demos will be discussed/finalized during the lecture. You will have 9 minutes maximum (8 minutes to setup and present. 1 minute for questions and everything else). You will lose points if your demo goes over 8 minutes. Please rehearse it and time yourself (best to keep it to 7 minutes or less). 
+Please note:
+- The demo MUST be from hosted website, NOT from localhost. 
+- Attendance is REQUIRED for these demos.
 
 Your presentation should include the following:
-- description of feature(s) implemented (no more than 1 slide)
+- Description of feature(s) implemented (no more than 1 slide)
 - Tech stack and/or list of other/external components used (no more than 1 slide)
 - Checklist of all user stories and COS (what was proposed vs what was implemented. Feel free to use percentages to show progress)
-- short summary of overall contributions made by each member (no more than 1-2 sentences per member);
+- short summary of overall contributions made by each member (no more than 1 slide with 1-2 sentences per member);
 - What percentage of overall contribution was made by each member (perhaps using weekly peer contribution scores)
-- estimated number of hours spent on the project by each member (for overall project);
-- what challenges were faced and how did you overcome them? Discuss any deviations from the proposed plan?
+- Estimated number of hours spent on the {overall} project by each member (excluding research tasks);
+- What challenges were faced and how did you overcome them? 
+- Discuss any deviations from the proposed plan?
 
 During your presentation, you might want to consider the following order: introduction of project idea/user stories follow by live demo, then present the checklist and then talk about remaining items from above in any order you find appropriate.
 
