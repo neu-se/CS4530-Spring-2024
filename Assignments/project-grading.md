@@ -52,7 +52,7 @@ We will grade each of these using the following rubric:
 * Implemented feature does not include any eslint-disable or ts-ignore flag
 
 ### Testing (10%)
-The project must include evidence of testing. Ideally, all new features will be accompanied by fully automated tests, but in some circumstances (particularly when engaging with Phaser, the game library, or Tiled, the map editor), this may not be feasible. If automated tests are not possible, include a discussion of your manual testing strategy, including a script that a future developer could use to manually test the feature. There is no explicit requirement to make use of any specific testing technology (e.g. mocks, spies, etc.).
+The project must include evidence of testing (both for front-end and back-end). Ideally, all new features will be accompanied by fully automated tests, but in some circumstances (particularly when engaging with Phaser, the game library, or Tiled, the map editor), this may not be feasible. If automated tests are not possible, include a discussion of your manual testing strategy, including a script that a future developer could use to manually test the feature. There is no explicit requirement to make use of any specific testing technology (e.g. mocks, spies, etc.).
 
 #### Satisfactory:
 * Any new or modified backend features include tests that validate that the feature works as intended. These tests cover the changed code, and also contain well-written assertions that thoroughly check the expected behaviors.

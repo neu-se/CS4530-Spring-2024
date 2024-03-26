@@ -93,8 +93,8 @@ Each work item should contain the following information:
 * Milestone for delivering the task, chosen from one of the following:
   * Sprint 0: Feb 14-Feb 28
   * Sprint 1: Feb 29-Mar 13 (Sprint 1 is just a single week, not including spring break)
-  * Sprint 2: Mar 14-Mar 28
-  * Sprint 3: Mar 29-Apr 10
+  * Sprint 2: Mar 14-Mar 27
+  * Sprint 3: Mar 28-Apr 10
 
 Your work breakdown should take the format of a simple textual list.
  
