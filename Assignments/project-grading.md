@@ -3,7 +3,7 @@ layout: page
 title: Final Project Grading
 permalink: /assignments/project-grading
 parent: Assignments
-nav_order: 6
+nav_order: 7
 ---
 # Grading
 Each project will be graded by the team's assigned TA mentor and the instructor. For most of the submission components below, we provide two benchmark rubrics: one for a submission that is satisfactory (full marks), and one that would be meeting our minimum expectations (a pass). In practice, when grading projects we will usually assign numeric grades and provide partial credit, using these rubrics as guidelines for those two extremes. A rubric for the remaining components will be provided by individual instructors. 
@@ -52,7 +52,7 @@ We will grade each of these using the following rubric:
 * Implemented feature does not include any eslint-disable or ts-ignore flag
 
 ### Testing (10%)
-The project must include evidence of testing. Ideally, all new features will be accompanied by fully automated tests, but in some circumstances (particularly when engaging with Phaser, the game library, or Tiled, the map editor), this may not be feasible. If automated tests are not possible, include a discussion of your manual testing strategy, including a script that a future developer could use to manually test the feature. There is no explicit requirement to make use of any specific testing technology (e.g. mocks, spies, etc.).
+The project must include evidence of testing (both for front-end and back-end). Ideally, all new features will be accompanied by fully automated tests, but in some circumstances (particularly when engaging with Phaser, the game library, or Tiled, the map editor), this may not be feasible. If automated tests are not possible, include a discussion of your manual testing strategy, including a script that a future developer could use to manually test the feature. There is no explicit requirement to make use of any specific testing technology (e.g. mocks, spies, etc.).
 
 #### Satisfactory:
 * Any new or modified backend features include tests that validate that the feature works as intended. These tests cover the changed code, and also contain well-written assertions that thoroughly check the expected behaviors.
@@ -91,7 +91,7 @@ The final report should consist of three sections:
 * Technical Overview
 * Process Overview
 
-The allocation of the 10% credit will be as follows: Overview and manual will be worth 4%, technical and process overviews will be worth 3% each.
+The allocation of the 10% credit will be as follows: Overview and manual will be worth 3%, technical and process overviews will be worth 4% and 3% respectively.
 
 ### * Feature Overview and User Manual
 
@@ -117,11 +117,13 @@ The allocation of the 10% credit will be as follows: Overview and manual will be
 * Technical Overview contains a description of any substantive changes to the existing Covey.Town codebase, and of the architecture of your new code.
 * When appropriate, it uses diagrams and/or figures to illustrate a design (there is no requirement to use a specific tool or format for this - students often use lucidchart, draw.io, [mermaid](https://mermaid.live) or even hand-drawn diagrams).
 * It provides a well-reasoned rationale for why this is the "right" design. 
-* The document is at most 2 pages (fewer pages are absolutely acceptable, consider this a rough limit) 
+* It provides a table showing the status of all proposed user stories and conditions of satisfaction (proposed vs completed). The status could be fully implemented, partially implementted (feel free to add percentages), not completed.
+* The document is at most 2 pages (fewer pages are absolutely acceptable, consider this a rough limit) excluding the table. 
 
 #### Meets minimum requirements:
 * Technical Overview includes a description of all major changes to the code compared to our existing Covey.Town codebase.
-* The document is at most 2 pages (fewer pages are absolutely acceptable, consider this a rough limit) 
+* It provides a table showing the status of all proposed user stories and conditions of satisfaction (proposed vs completed). The status could be fully implemented, partially implementted (feel free to add percentages), not completed.
+* The document is at most 2 pages (fewer pages are absolutely acceptable, consider this a rough limit) excluding the table.
 
 ### * Process Overview
 #### Satisfactory:
@@ -135,7 +137,10 @@ The allocation of the 10% credit will be as follows: Overview and manual will be
 * The document is at most 2 pages (fewer pages are absolutely acceptable, consider this a rough limit) 
 
 ### Posters and Demo (10%)
-Each team will be required to submit a poster. In addition, some sections may have a demo (live in-person, via zoom or by recorded video). Each instructor will provide details regarding expectations for the demo and/or presentation. The schedule and manner of these demos might also vary from section to section.  The specifications for the different sections will be posted in the coming weeks.
+Each team will be required to submit a poster. In addition, some sections may have a demo (live in-person, via zoom or by recorded video). Each instructor will provide details regarding expectations for the demo and/or presentation. The schedule and manner of these demos might also vary from section to section. The specifications for the different sections are listed below:
+* [Section 1 - Prof. Bell]({{ site.baseurl }}{% link Assignments/demo-sec1.md %})
+* [Sections 2, 3, 5 - Prof. Bhutta]({{ site.baseurl }}{% link Assignments/demo-sec235.md %})
+* [Section 4 - Prof. Wand]({{ site.baseurl }}{% link Assignments/demo-sec4.md %})
 
 Select projects may be hosted in our project showcase. Here are selected projects from the [Fall 2022 project showcase](https://neu-se.github.io/CS4530-Fall-2022/assignments/project-showcase) and [Fall 2023 project showcase](https://neu-se.github.io/CS4530-Fall-2023/assignments/project-showcase). Posters will only be included in the showcase with the team's permission.
 
