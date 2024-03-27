@@ -69,7 +69,7 @@ guest-pm:
   name: Work on Project
 12b:
   name: Ethics
-  page: 
+  page: /modules/17-ethics
 12c:
   name: Work on Project / Mini-Demo
 13a:
@@ -106,7 +106,7 @@ tp3:
 tp4:
   name: Project Final Deliverable
   type: deadline
-  page: 
+  page: /assignments/project-deliverable
 veteransday:
   name: Veteran's Day (No class)
   type: holiday
