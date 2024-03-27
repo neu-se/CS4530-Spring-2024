@@ -32,4 +32,4 @@ Your final Poster and Demos are worth 4% of the overall course.
 
 Poster will be worth 1% and will be graded based on whether you submitted it on time or not. 
 
-Demos will be worth 3% and will be graded using the following criteria: Each group will evaluate each others' demos and will assign scores (Instructor and TAs will do the same). Your final demo score will be calculated by combining all of these scores (equally weighted). However, you will not receive points for the demo if your group fails to submit copy of the presentation on Canvas or if you are not present for all presentations/demos during class.
+Demos will be worth 3% and will be graded using the following criteria: Each group will evaluate each others' demos and will assign scores (Instructor and TAs will do the same). Your final demo score will be calculated by combining all of these scores (equally weighted). However, you will not receive points for the demo if your group fails to submit copy of the presentation on Canvas, your scores to instructor and if you are not present for all presentations/demos during class.
