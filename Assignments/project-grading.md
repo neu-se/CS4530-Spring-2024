@@ -52,15 +52,17 @@ We will grade each of these using the following rubric:
 * Implemented feature does not include any eslint-disable or ts-ignore flag
 
 ### Testing (10%)
-The project must include evidence of testing. Ideally, all new features will be accompanied by fully automated tests, but in some circumstances (particularly when engaging with Phaser, the game library, or Tiled, the map editor), this may not be feasible. If automated tests are not possible, include a discussion of your manual testing strategy, including a script that a future developer could use to manually test the feature. There is no explicit requirement to make use of any specific testing technology (e.g. mocks, spies, etc.).
+The project must include evidence of testing (both for front-end and back-end). Ideally, all new features will be accompanied by fully automated tests, but in some circumstances, this may not be feasible. If automated tests are not possible, include a discussion of your manual testing strategy. There is no explicit requirement to make use of any specific testing technology (e.g. mocks, spies, etc.).
 
 #### Satisfactory:
-* Any new or modified backend features include tests that validate that the feature works as intended. These tests cover the changed code, and also contain well-written assertions that thoroughly check the expected behaviors.
-* Tests contains no ESLint warnings or errors; does not include any eslint-disable or ts-ignore flags
+* Any new or modified features include tests that validate that the feature works as intended. These tests (which need not be fully automated) cover the changed code and contain well-written assertions that thoroughly check the expected behaviors.
+* Any bugs that the staff detect when evaluating your application are also represented as failing tests (be they manual or automated tests)
+* Tests contain no ESLint warnings or errors; do not include any eslint-disable or ts-ignore flags
 
 #### Meets minimum requirements:
-* Any new or modified backend features include at least one test, which may or may not be an effective test.
-* Tests may contain ESlint warnings (but no errors); does not include any eslint-disable or ts-ignore flags
+* Any new or modified features include at least one test, which may or may not be an effective test.
+* The staff may detect some bugs that are not represented by failing tests. However, a manual evaluation of the test suite indicates a good-faith effort to test the features
+* Tests may contain ESlint warnings (but no errors); do not include any eslint-disable or ts-ignore flags
 
 ### Process (20%)
 The Process grade includes: use of a structured development process, including code reviews, timely completion of sprint progress reports/retrospectives, individual/team surveys, peer evaluations and weekly meetings with TA Mentor (for Week 6, 8, 10-14). It also includes appropriate division of labor within the project. For full credit, each member of the team must have at least 4 commits in the final delivered code. 
